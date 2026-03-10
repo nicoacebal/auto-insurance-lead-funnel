@@ -1,0 +1,59 @@
+﻿<div class="paso" id="paso-pre-cotizacion">
+  <nav class="stepper" aria-label="Progreso del cotizador">
+    <ol class="stepper-lista stepper-lista-4">
+      <li class="stepper-item completado">
+        <span class="stepper-numero">1</span>
+        <span class="stepper-texto">Vehiculo</span>
+      </li>
+      <li class="stepper-item activo">
+        <span class="stepper-numero">2</span>
+        <span class="stepper-texto">Pre-cotizacion</span>
+      </li>
+      <li class="stepper-item">
+        <span class="stepper-numero">3</span>
+        <span class="stepper-texto">Contacto</span>
+      </li>
+      <li class="stepper-item">
+        <span class="stepper-numero">4</span>
+        <span class="stepper-texto">Confirmacion</span>
+      </li>
+    </ol>
+  </nav>
+
+  <p class="paso-indicador">Paso 2 de 4</p>
+  <h3 class="paso-titulo">Pre-cotizacion estimada</h3>
+
+  <article class="resultado-caja pre-cotizacion-caja">
+    <p class="resultado-topline">Tu seguro desde</p>
+    <p class="resultado-precio-destacado">{{ valor_cotizacion }} <span>/ mes</span></p>
+    <p class="texto-ayuda">Este es un valor estimado segun los datos de tu vehiculo.</p>
+  </article>
+
+  <div class="bloque-conversion">
+    <p>
+      Dejanos tus datos y un asesor te enviara una cotizacion mas precisa y te ayudara a elegir la mejor cobertura.
+    </p>
+  </div>
+
+  <form
+    class="formulario formulario-inline"
+    data-cotizador-step="pre-cotizacion"
+    hx-post="/cotizador/paso-1/contacto"
+    hx-target="#flujo-cotizador"
+    hx-swap="innerHTML"
+    hx-indicator="#indicador-carga"
+  >
+    <input type="hidden" name="marca" value="{{ marca }}" />
+    <input type="hidden" name="modelo" value="{{ modelo }}" />
+    <input type="hidden" name="anio" value="{{ anio }}" />
+    <input type="hidden" name="version" value="{{ version }}" />
+
+    <input type="hidden" name="utm_source" data-origen="utm_source" value="{{ utm_source | default('', true) }}" />
+    <input type="hidden" name="utm_medium" data-origen="utm_medium" value="{{ utm_medium | default('', true) }}" />
+    <input type="hidden" name="utm_campaign" data-origen="utm_campaign" value="{{ utm_campaign | default('', true) }}" />
+    <input type="hidden" name="referrer" data-origen="referrer" value="{{ referrer | default('', true) }}" />
+    <input type="hidden" name="landing_page" data-origen="landing_page" value="{{ landing_page | default('', true) }}" />
+
+    <button class="boton-primario" type="submit">Quiero recibir mi cotizacion</button>
+  </form>
+</div>

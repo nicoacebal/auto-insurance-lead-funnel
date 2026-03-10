@@ -6,7 +6,7 @@
     <title>Cotiza tu Seguro de Auto</title>
     <meta
       name="description"
-      content="Completa tus datos en 3 pasos y obten una cotizacion simulada de seguro de auto."
+      content="Cotiza tu seguro con una experiencia digital rapida, clara y acompanada por asesores especializados."
     />
     <link rel="stylesheet" href="{{ url_for('estaticos', path='css/estilos.css') }}" />
     <script src="https://unpkg.com/htmx.org@1.9.12" defer></script>
@@ -14,23 +14,92 @@
   </head>
   <body>
     <main class="contenedor">
-      <header class="hero">
-        <p class="etiqueta">Cotizador online</p>
-        <h1>Cotiza tu seguro de auto en 3 pasos</h1>
-        <p class="subtitulo">
-          Flujo inicial con FastAPI + Jinja2 + HTMX para validar experiencia y conversion antes de integrar la API real.
-        </p>
-      </header>
+      <section class="hero-dos-columnas" aria-label="Presentacion del producto">
+        <div class="hero-texto">
+          <p class="hero-etiqueta">Broker digital de seguros</p>
+          <h1>Cotiza tu seguro de auto con una experiencia fintech/insurtech</h1>
+          <p class="hero-subtitulo">
+            Te mostramos opciones claras, respaldo de aseguradoras lideres y acompanamiento humano en cada paso.
+          </p>
+          <a class="boton-hero" href="#cotizador" data-evento="hero_click">Quiero cotizar ahora</a>
+        </div>
+        <div class="hero-imagen">
+          <img src="{{ url_for('estaticos', path='img/auto-hero.svg') }}" alt="Auto moderno para cotizacion de seguros" />
+        </div>
+      </section>
 
-      <section class="tarjeta" aria-live="polite" aria-labelledby="titulo-cotizador">
-        <h2 id="titulo-cotizador">Inicia tu cotizacion</h2>
+      <section class="prueba-social" aria-label="Prueba social">
+        <p class="social-kpi">+18.000 clientes ya cotizaron con nosotros este ultimo ano.</p>
+        <div class="logos-aseguradoras" aria-label="Aseguradoras disponibles">
+          <span class="logo-placeholder">Aseguradora A</span>
+          <span class="logo-placeholder">Aseguradora B</span>
+          <span class="logo-placeholder">Aseguradora C</span>
+          <span class="logo-placeholder">Aseguradora D</span>
+        </div>
+      </section>
+
+      <section class="beneficios-tarjetas" aria-labelledby="titulo-beneficios">
+        <h2 id="titulo-beneficios">Beneficios para asegurar tu auto hoy</h2>
+        <div class="beneficios-grid">
+          <article class="beneficio-card">
+            <h3>Cotizacion transparente</h3>
+            <p>Ves alternativas claras para decidir con informacion concreta y sin letra chica.</p>
+          </article>
+          <article class="beneficio-card">
+            <h3>Asesor experto</h3>
+            <p>Un broker te acompana para ajustar coberturas segun tu uso y presupuesto real.</p>
+          </article>
+          <article class="beneficio-card">
+            <h3>Proceso agil</h3>
+            <p>Completas tus datos en minutos y avanzas rapido hacia una propuesta personalizada.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="cotizador" class="tarjeta-cotizador" aria-live="polite" aria-labelledby="titulo-cotizador">
+        <h2 id="titulo-cotizador">Cotiza tu seguro en menos de 1 minuto</h2>
+        <p class="intro-cotizador">Solo te llevara 30 segundos.</p>
 
         <div id="flujo-cotizador" class="flujo-cotizador">
           {% include "componentes/formulario_vehiculo.html" %}
         </div>
 
-        <p id="indicador-carga" class="indicador-carga htmx-indicator">Procesando paso...</p>
+        <p id="indicador-carga" class="indicador-carga htmx-indicator">
+          <span class="spinner-carga" aria-hidden="true"></span>
+          <span id="indicador-carga-texto">Procesando paso...</span>
+        </p>
+      </section>
+
+      <section class="seguridad-datos" aria-label="Confianza y seguridad">
+        <h2>Tus datos estan protegidos</h2>
+        <p>
+          Aplicamos practicas de seguridad para proteger tu informacion y usarla unicamente en el proceso de cotizacion.
+        </p>
+      </section>
+
+      <section class="faq" aria-labelledby="titulo-faq">
+        <h2 id="titulo-faq">Preguntas frecuentes</h2>
+        <details>
+          <summary>La cotizacion tiene costo?</summary>
+          <p>No. Es gratuita y sin compromiso de contratacion.</p>
+        </details>
+        <details>
+          <summary>Con que aseguradoras trabajan?</summary>
+          <p>Trabajamos con multiples companias para ofrecer alternativas segun tu perfil y cobertura deseada.</p>
+        </details>
+        <details>
+          <summary>Cuando me contactan?</summary>
+          <p>Un asesor se comunica rapidamente luego de enviar tus datos para continuar con tu propuesta.</p>
+        </details>
       </section>
     </main>
+
+    <footer class="footer-broker">
+      <div class="footer-contenido">
+        <p class="footer-marca">Broker AutoSeguro</p>
+        <p>Asesoria comercial: (11) 5555-1234 | contacto@autosegurobroker.com</p>
+        <p>Atencion de lunes a viernes de 9:00 a 18:00.</p>
+      </div>
+    </footer>
   </body>
 </html>

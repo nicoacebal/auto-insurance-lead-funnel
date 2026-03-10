@@ -1,19 +1,48 @@
 ﻿<div class="paso" id="paso-vehiculo">
-  <p class="paso-indicador">Paso 1 de 3</p>
-  <h3 class="paso-titulo">Datos del vehiculo</h3>
-  <p class="texto-ayuda">Ingresa la informacion basica para estimar una cotizacion.</p>
+  <nav class="stepper" aria-label="Progreso del cotizador">
+    <ol class="stepper-lista stepper-lista-4">
+      <li class="stepper-item activo">
+        <span class="stepper-numero">1</span>
+        <span class="stepper-texto">Vehiculo</span>
+      </li>
+      <li class="stepper-item">
+        <span class="stepper-numero">2</span>
+        <span class="stepper-texto">Pre-cotizacion</span>
+      </li>
+      <li class="stepper-item">
+        <span class="stepper-numero">3</span>
+        <span class="stepper-texto">Contacto</span>
+      </li>
+      <li class="stepper-item">
+        <span class="stepper-numero">4</span>
+        <span class="stepper-texto">Confirmacion</span>
+      </li>
+    </ol>
+  </nav>
+
+  <p class="paso-indicador">Paso 1 de 4</p>
+  <h3 class="paso-titulo">Contanos sobre tu vehiculo</h3>
+  <p class="texto-ayuda">Con estos datos te mostramos una estimacion inicial en segundos.</p>
 
   {% if error %}
   <p class="mensaje-error">{{ error }}</p>
   {% endif %}
 
   <form
+    id="formulario-vehiculo"
     class="formulario"
+    data-cotizador-step="vehiculo"
     hx-post="/cotizador/paso-1"
     hx-target="#flujo-cotizador"
     hx-swap="innerHTML"
     hx-indicator="#indicador-carga"
   >
+    <input type="hidden" name="utm_source" data-origen="utm_source" value="{{ utm_source | default('', true) }}" />
+    <input type="hidden" name="utm_medium" data-origen="utm_medium" value="{{ utm_medium | default('', true) }}" />
+    <input type="hidden" name="utm_campaign" data-origen="utm_campaign" value="{{ utm_campaign | default('', true) }}" />
+    <input type="hidden" name="referrer" data-origen="referrer" value="{{ referrer | default('', true) }}" />
+    <input type="hidden" name="landing_page" data-origen="landing_page" value="{{ landing_page | default('', true) }}" />
+
     <label for="marca">Marca</label>
     <input
       id="marca"
@@ -39,8 +68,7 @@
       id="anio"
       name="anio"
       type="number"
-      min="1980"
-      max="2035"
+      min="1990"
       placeholder="Ej: 2022"
       value="{{ anio | default('', true) }}"
       required
@@ -56,6 +84,6 @@
       required
     />
 
-    <button class="boton-primario" type="submit">Continuar</button>
+    <button class="boton-primario" type="submit">Calcular estimacion</button>
   </form>
 </div>

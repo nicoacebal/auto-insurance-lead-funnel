@@ -1,11 +1,32 @@
 ﻿<div class="paso" id="paso-resultado">
-  <p class="paso-indicador">Paso 3 de 3</p>
-  <h3 class="paso-titulo">Tu cotizacion simulada</h3>
+  <nav class="stepper" aria-label="Progreso del cotizador">
+    <ol class="stepper-lista stepper-lista-4">
+      <li class="stepper-item completado">
+        <span class="stepper-numero">1</span>
+        <span class="stepper-texto">Vehiculo</span>
+      </li>
+      <li class="stepper-item completado">
+        <span class="stepper-numero">2</span>
+        <span class="stepper-texto">Pre-cotizacion</span>
+      </li>
+      <li class="stepper-item completado">
+        <span class="stepper-numero">3</span>
+        <span class="stepper-texto">Contacto</span>
+      </li>
+      <li class="stepper-item activo">
+        <span class="stepper-numero">4</span>
+        <span class="stepper-texto">Confirmacion</span>
+      </li>
+    </ol>
+  </nav>
+
+  <p class="paso-indicador">Paso 4 de 4</p>
+  <h3 class="paso-titulo">Tu solicitud fue enviada</h3>
 
   <article class="resultado-caja">
-    <p class="resultado-etiqueta">Valor estimado mensual</p>
-    <p class="resultado-precio">{{ valor_cotizacion }}</p>
-    <p class="texto-ayuda">Monto de referencia para pruebas de experiencia. Sin consulta a API externa en esta fase.</p>
+    <p class="resultado-topline">Precio estimado</p>
+    <p class="resultado-precio-destacado">{{ valor_cotizacion }} <span>/ mes</span></p>
+    <p class="texto-ayuda">Un asesor se pondra en contacto para enviarte una cotizacion mas precisa y ayudarte a elegir la mejor cobertura.</p>
   </article>
 
   {% if aviso_guardado %}
@@ -31,9 +52,18 @@
     </div>
   </dl>
 
-  <div class="acciones">
+  <div class="acciones acciones-resultado">
     <button class="boton-primario" type="button" hx-get="/cotizador/reiniciar" hx-target="#flujo-cotizador" hx-swap="innerHTML" hx-indicator="#indicador-carga">
       Cotizar otro vehiculo
     </button>
+    <a
+      class="boton-whatsapp"
+      href="{{ whatsapp_url }}"
+      target="_blank"
+      rel="noopener noreferrer"
+      data-evento="whatsapp_click"
+    >
+      Hablar con asesor ahora
+    </a>
   </div>
 </div>

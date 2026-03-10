@@ -1,18 +1,47 @@
 ﻿<div class="paso" id="paso-contacto">
-  <p class="paso-indicador">Paso 2 de 3</p>
-  <h3 class="paso-titulo">Tus datos de contacto</h3>
-  <p class="texto-ayuda">Usaremos esta informacion para enviarte una propuesta personalizada.</p>
+  <nav class="stepper" aria-label="Progreso del cotizador">
+    <ol class="stepper-lista stepper-lista-4">
+      <li class="stepper-item completado">
+        <span class="stepper-numero">1</span>
+        <span class="stepper-texto">Vehiculo</span>
+      </li>
+      <li class="stepper-item completado">
+        <span class="stepper-numero">2</span>
+        <span class="stepper-texto">Pre-cotizacion</span>
+      </li>
+      <li class="stepper-item activo">
+        <span class="stepper-numero">3</span>
+        <span class="stepper-texto">Contacto</span>
+      </li>
+      <li class="stepper-item">
+        <span class="stepper-numero">4</span>
+        <span class="stepper-texto">Confirmacion</span>
+      </li>
+    </ol>
+  </nav>
+
+  <p class="paso-indicador">Paso 3 de 4</p>
+  <h3 class="paso-titulo">Dejanos tus datos de contacto</h3>
+  <p class="texto-ayuda">Enviaremos una propuesta mas precisa y te ayudaremos a elegir la mejor cobertura.</p>
 
   <div class="resumen-mini">
     <strong>Vehiculo:</strong> {{ marca }} {{ modelo }} {{ version }} ({{ anio }})
   </div>
+
+  {% if valor_cotizacion %}
+  <div class="resumen-mini resumen-precio">
+    <strong>Estimacion actual:</strong> {{ valor_cotizacion }} / mes
+  </div>
+  {% endif %}
 
   {% if error %}
   <p class="mensaje-error">{{ error }}</p>
   {% endif %}
 
   <form
+    id="formulario-contacto"
     class="formulario"
+    data-cotizador-step="contacto"
     hx-post="/cotizador/paso-2"
     hx-target="#flujo-cotizador"
     hx-swap="innerHTML"
@@ -22,6 +51,12 @@
     <input type="hidden" name="modelo" value="{{ modelo }}" />
     <input type="hidden" name="anio" value="{{ anio }}" />
     <input type="hidden" name="version" value="{{ version }}" />
+
+    <input type="hidden" name="utm_source" data-origen="utm_source" value="{{ utm_source | default('', true) }}" />
+    <input type="hidden" name="utm_medium" data-origen="utm_medium" value="{{ utm_medium | default('', true) }}" />
+    <input type="hidden" name="utm_campaign" data-origen="utm_campaign" value="{{ utm_campaign | default('', true) }}" />
+    <input type="hidden" name="referrer" data-origen="referrer" value="{{ referrer | default('', true) }}" />
+    <input type="hidden" name="landing_page" data-origen="landing_page" value="{{ landing_page | default('', true) }}" />
 
     <label for="nombre">Nombre y apellido</label>
     <input
@@ -55,10 +90,9 @@
 
     <div class="acciones acciones-dobles">
       <button class="boton-secundario" type="button" hx-get="/cotizador/reiniciar" hx-target="#flujo-cotizador" hx-swap="innerHTML" hx-indicator="#indicador-carga">
-        Volver
+        Volver al inicio
       </button>
-      <button class="boton-primario" type="submit">Ver cotizacion</button>
+      <button class="boton-primario" type="submit">Recibir cotizacion final</button>
     </div>
   </form>
 </div>
-
