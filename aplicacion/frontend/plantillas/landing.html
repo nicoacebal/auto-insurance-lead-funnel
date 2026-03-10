@@ -1,0 +1,36 @@
+﻿<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cotiza tu Seguro de Auto</title>
+    <meta
+      name="description"
+      content="Completa tus datos en 3 pasos y obten una cotizacion simulada de seguro de auto."
+    />
+    <link rel="stylesheet" href="{{ url_for('estaticos', path='css/estilos.css') }}" />
+    <script src="https://unpkg.com/htmx.org@1.9.12" defer></script>
+    <script src="{{ url_for('estaticos', path='js/app.js') }}" defer></script>
+  </head>
+  <body>
+    <main class="contenedor">
+      <header class="hero">
+        <p class="etiqueta">Cotizador online</p>
+        <h1>Cotiza tu seguro de auto en 3 pasos</h1>
+        <p class="subtitulo">
+          Flujo inicial con FastAPI + Jinja2 + HTMX para validar experiencia y conversion antes de integrar la API real.
+        </p>
+      </header>
+
+      <section class="tarjeta" aria-live="polite" aria-labelledby="titulo-cotizador">
+        <h2 id="titulo-cotizador">Inicia tu cotizacion</h2>
+
+        <div id="flujo-cotizador" class="flujo-cotizador">
+          {% include "componentes/formulario_vehiculo.html" %}
+        </div>
+
+        <p id="indicador-carga" class="indicador-carga htmx-indicator">Procesando paso...</p>
+      </section>
+    </main>
+  </body>
+</html>

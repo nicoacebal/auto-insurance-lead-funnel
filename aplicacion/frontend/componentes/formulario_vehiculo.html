@@ -1,0 +1,61 @@
+﻿<div class="paso" id="paso-vehiculo">
+  <p class="paso-indicador">Paso 1 de 3</p>
+  <h3 class="paso-titulo">Datos del vehiculo</h3>
+  <p class="texto-ayuda">Ingresa la informacion basica para estimar una cotizacion.</p>
+
+  {% if error %}
+  <p class="mensaje-error">{{ error }}</p>
+  {% endif %}
+
+  <form
+    class="formulario"
+    hx-post="/cotizador/paso-1"
+    hx-target="#flujo-cotizador"
+    hx-swap="innerHTML"
+    hx-indicator="#indicador-carga"
+  >
+    <label for="marca">Marca</label>
+    <input
+      id="marca"
+      name="marca"
+      type="text"
+      placeholder="Ej: Toyota"
+      value="{{ marca | default('', true) }}"
+      required
+    />
+
+    <label for="modelo">Modelo</label>
+    <input
+      id="modelo"
+      name="modelo"
+      type="text"
+      placeholder="Ej: Corolla"
+      value="{{ modelo | default('', true) }}"
+      required
+    />
+
+    <label for="anio">Anio</label>
+    <input
+      id="anio"
+      name="anio"
+      type="number"
+      min="1980"
+      max="2035"
+      placeholder="Ej: 2022"
+      value="{{ anio | default('', true) }}"
+      required
+    />
+
+    <label for="version">Version</label>
+    <input
+      id="version"
+      name="version"
+      type="text"
+      placeholder="Ej: XEI 2.0"
+      value="{{ version | default('', true) }}"
+      required
+    />
+
+    <button class="boton-primario" type="submit">Continuar</button>
+  </form>
+</div>

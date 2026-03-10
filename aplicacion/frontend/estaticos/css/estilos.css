@@ -1,0 +1,257 @@
+﻿:root {
+  --fondo: #eef3fb;
+  --superficie: #ffffff;
+  --texto: #132035;
+  --muted: #50607a;
+  --primario: #0d66f2;
+  --primario-hover: #0a52c4;
+  --secundario: #edf3ff;
+  --secundario-hover: #dde9ff;
+  --borde: #d3ddec;
+  --error: #b3261e;
+  --sombra: 0 14px 34px rgba(14, 33, 64, 0.09);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--texto);
+  background: radial-gradient(circle at top right, #dfe9ff, var(--fondo) 55%);
+}
+
+.contenedor {
+  width: min(760px, 100%);
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.hero {
+  margin: 0.6rem 0 1rem;
+}
+
+.etiqueta {
+  display: inline-block;
+  margin: 0 0 0.5rem;
+  padding: 0.35rem 0.65rem;
+  border-radius: 999px;
+  background: #e6efff;
+  color: var(--primario);
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(1.7rem, 5.5vw, 2.4rem);
+  line-height: 1.18;
+}
+
+.subtitulo {
+  margin: 0.75rem 0 0;
+  color: var(--muted);
+  font-size: 1rem;
+}
+
+.tarjeta {
+  background: var(--superficie);
+  border: 1px solid var(--borde);
+  border-radius: 18px;
+  box-shadow: var(--sombra);
+  padding: 1rem;
+}
+
+.tarjeta > h2 {
+  margin: 0 0 0.85rem;
+  font-size: 1.2rem;
+}
+
+.paso-indicador {
+  margin: 0;
+  color: var(--primario);
+  font-weight: 700;
+  font-size: 0.88rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.paso-titulo {
+  margin: 0.35rem 0 0.5rem;
+  font-size: 1.3rem;
+}
+
+.texto-ayuda {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.45;
+}
+
+.formulario {
+  display: grid;
+  gap: 0.95rem;
+  margin-top: 1rem;
+}
+
+label {
+  font-size: 0.96rem;
+  font-weight: 700;
+}
+
+input {
+  width: 100%;
+  min-height: 52px;
+  padding: 0.9rem 0.95rem;
+  border: 1px solid var(--borde);
+  border-radius: 12px;
+  font-size: 1.05rem;
+}
+
+input:focus {
+  outline: 3px solid #b6cdff;
+  border-color: var(--primario);
+}
+
+.acciones {
+  display: grid;
+  gap: 0.7rem;
+  margin-top: 0.4rem;
+}
+
+button {
+  width: 100%;
+  border: 0;
+  border-radius: 12px;
+  min-height: 50px;
+  padding: 0.85rem 1rem;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.boton-primario {
+  background: var(--primario);
+  color: #ffffff;
+}
+
+.boton-primario:hover {
+  background: var(--primario-hover);
+}
+
+.boton-secundario {
+  background: var(--secundario);
+  color: var(--texto);
+}
+
+.boton-secundario:hover {
+  background: var(--secundario-hover);
+}
+
+.mensaje-error {
+  margin: 0.8rem 0 0;
+  padding: 0.7rem 0.8rem;
+  border: 1px solid #f1c4c1;
+  border-radius: 10px;
+  background: #fef1f0;
+  color: var(--error);
+  font-size: 0.95rem;
+}
+
+.mensaje-aviso {
+  margin: 0.8rem 0 0;
+  padding: 0.7rem 0.8rem;
+  border: 1px solid #f0d8a5;
+  border-radius: 10px;
+  background: #fff8ea;
+  color: #6f4f1e;
+  font-size: 0.95rem;
+}
+
+.resumen-mini {
+  margin-top: 0.9rem;
+  padding: 0.75rem 0.8rem;
+  border: 1px solid var(--borde);
+  border-radius: 10px;
+  background: #f8fafe;
+}
+
+.resultado-caja {
+  margin-top: 0.9rem;
+  padding: 1rem;
+  border-radius: 14px;
+  border: 1px solid #c6d7fb;
+  background: linear-gradient(180deg, #eff5ff 0%, #f9fbff 100%);
+}
+
+.resultado-etiqueta {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.resultado-precio {
+  margin: 0.35rem 0 0.55rem;
+  font-size: clamp(1.9rem, 8vw, 2.5rem);
+  line-height: 1.05;
+  font-weight: 800;
+  color: #0c3f96;
+}
+
+.resumen-final {
+  margin: 1rem 0 0;
+  padding: 0;
+  display: grid;
+  gap: 0.65rem;
+}
+
+.resumen-final div {
+  border: 1px solid var(--borde);
+  border-radius: 10px;
+  padding: 0.7rem 0.8rem;
+}
+
+.resumen-final dt {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.86rem;
+  font-weight: 700;
+}
+
+.resumen-final dd {
+  margin: 0.25rem 0 0;
+  font-weight: 600;
+}
+
+.indicador-carga {
+  margin: 0.95rem 0 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.htmx-indicator {
+  display: none;
+}
+
+.htmx-request.htmx-indicator,
+.htmx-request .htmx-indicator {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .contenedor {
+    padding: 2rem;
+  }
+
+  .tarjeta {
+    padding: 1.5rem;
+  }
+
+  .acciones-dobles {
+    grid-template-columns: 1fr 1fr;
+  }
+}

@@ -1,0 +1,39 @@
+﻿<div class="paso" id="paso-resultado">
+  <p class="paso-indicador">Paso 3 de 3</p>
+  <h3 class="paso-titulo">Tu cotizacion simulada</h3>
+
+  <article class="resultado-caja">
+    <p class="resultado-etiqueta">Valor estimado mensual</p>
+    <p class="resultado-precio">{{ valor_cotizacion }}</p>
+    <p class="texto-ayuda">Monto de referencia para pruebas de experiencia. Sin consulta a API externa en esta fase.</p>
+  </article>
+
+  {% if aviso_guardado %}
+  <p class="mensaje-aviso">{{ aviso_guardado }}</p>
+  {% endif %}
+
+  <dl class="resumen-final">
+    <div>
+      <dt>Vehiculo</dt>
+      <dd>{{ marca }} {{ modelo }} {{ version }} ({{ anio }})</dd>
+    </div>
+    <div>
+      <dt>Nombre</dt>
+      <dd>{{ nombre }}</dd>
+    </div>
+    <div>
+      <dt>Telefono</dt>
+      <dd>{{ telefono }}</dd>
+    </div>
+    <div>
+      <dt>Email</dt>
+      <dd>{{ email }}</dd>
+    </div>
+  </dl>
+
+  <div class="acciones">
+    <button class="boton-primario" type="button" hx-get="/cotizador/reiniciar" hx-target="#flujo-cotizador" hx-swap="innerHTML" hx-indicator="#indicador-carga">
+      Cotizar otro vehiculo
+    </button>
+  </div>
+</div>
