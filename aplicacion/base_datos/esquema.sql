@@ -43,3 +43,23 @@ create table if not exists eventos_funnel (
   detalle jsonb,
   creado_en timestamptz not null default now()
 );
+
+create table if not exists vehiculos (
+  id_vehiculo integer primary key,
+  marca text not null,
+  modelo text not null,
+  version text,
+  anio integer,
+  tipo text,
+  creado_en timestamptz not null default now()
+);
+
+alter table if exists vehiculos add column if not exists marca text;
+alter table if exists vehiculos add column if not exists modelo text;
+alter table if exists vehiculos add column if not exists version text;
+alter table if exists vehiculos add column if not exists anio integer;
+alter table if exists vehiculos add column if not exists tipo text;
+alter table if exists vehiculos add column if not exists creado_en timestamptz not null default now();
+
+create index if not exists idx_vehiculos_marca on vehiculos (marca);
+create index if not exists idx_vehiculos_modelo on vehiculos (modelo);

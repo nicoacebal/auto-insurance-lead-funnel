@@ -8,12 +8,18 @@ from datetime import datetime
 from pathlib import Path
 from urllib.parse import quote_plus
 
-from fastapi import FastAPI, Form, Request
+from fastapi import FastAPI, Form, HTTPException, Request
 from fastapi.responses import HTMLResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 
 from .servicio_leads import guardar_lead
+from .servicio_vehiculos import (
+    obtener_anios,
+    obtener_marcas,
+    obtener_modelos,
+    obtener_versiones,
+)
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 FRONTEND_DIR = BASE_DIR / "frontend"
@@ -118,6 +124,56 @@ def _normalizar_datos_vehiculo(datos_vehiculo: dict[str, str]) -> dict[str, str]
     return datos
 
 
+def _construir_contexto_catalogo_vehiculos(
+    *,
+    marca: str | None = None,
+    modelo: str | None = None,
+    anio: str | None = None,
+    version: str | None = None,
+) -> dict[str, object]:
+    """Resuelve opciones del catalogo y limpia selecciones incompatibles."""
+    try:
+        marcas = obtener_marcas()
+        marca_actual = marca if marca in marcas else None
+
+        modelos = obtener_modelos(marca_actual) if marca_actual else []
+        modelo_actual = modelo if modelo in modelos else None
+
+        anios = obtener_anios(marca_actual, modelo_actual) if marca_actual and modelo_actual else []
+        anio_actual = anio if anio and anio.isdigit() and int(anio) in anios else None
+
+        versiones = (
+            obtener_versiones(marca_actual, modelo_actual, int(anio_actual))
+            if marca_actual and modelo_actual and anio_actual
+            else []
+        )
+        version_actual = version if version in versiones else None
+
+        return {
+            "marcas": marcas,
+            "modelos": modelos,
+            "anios_catalogo": anios,
+            "versiones_catalogo": versiones,
+            "marca": marca_actual or "",
+            "modelo": modelo_actual or "",
+            "anio": anio_actual or "",
+            "version": version_actual or "",
+            "catalogo_error": None,
+        }
+    except RuntimeError as error:
+        return {
+            "marcas": [],
+            "modelos": [],
+            "anios_catalogo": [],
+            "versiones_catalogo": [],
+            "marca": marca or "",
+            "modelo": modelo or "",
+            "anio": anio or "",
+            "version": version or "",
+            "catalogo_error": str(error),
+        }
+
+
 @app.get("/", response_class=HTMLResponse, tags=["Landing"])
 async def mostrar_landing(request: Request) -> HTMLResponse:
     """Renderiza la pagina principal de captacion."""
@@ -130,14 +186,17 @@ async def mostrar_landing(request: Request) -> HTMLResponse:
     )
     return templates.TemplateResponse(
         "plantillas/landing.html",
-        {"request": request, **contexto_origen},
+        {"request": request, **contexto_origen, **_construir_contexto_catalogo_vehiculos()},
     )
 
 
 @app.get("/cotizador/reiniciar", response_class=HTMLResponse, tags=["Cotizador"])
 async def reiniciar_cotizador(request: Request) -> HTMLResponse:
     """Reinicia el flujo devolviendo el formulario del vehiculo."""
-    return templates.TemplateResponse("componentes/formulario_vehiculo.html", {"request": request})
+    return templates.TemplateResponse(
+        "componentes/formulario_vehiculo.html",
+        {"request": request, **_construir_contexto_catalogo_vehiculos()},
+    )
 
 
 @app.post("/cotizador/paso-1", response_class=HTMLResponse, tags=["Cotizador"])
@@ -174,7 +233,7 @@ async def procesar_paso_vehiculo(
             "componentes/formulario_vehiculo.html",
             {
                 "request": request,
-                **datos_vehiculo,
+                **_construir_contexto_catalogo_vehiculos(**datos_vehiculo),
                 **datos_origen,
                 "error": error,
             },
@@ -230,7 +289,7 @@ async def avanzar_a_contacto(
             "componentes/formulario_vehiculo.html",
             {
                 "request": request,
-                **datos_vehiculo,
+                **_construir_contexto_catalogo_vehiculos(**datos_vehiculo),
                 **datos_origen,
                 "error": error,
             },
@@ -291,7 +350,7 @@ async def procesar_paso_contacto(
             "componentes/formulario_vehiculo.html",
             {
                 "request": request,
-                **datos_vehiculo,
+                **_construir_contexto_catalogo_vehiculos(**datos_vehiculo),
                 **datos_origen,
                 "error": error_vehiculo,
             },
@@ -388,3 +447,60 @@ async def procesar_paso_contacto(
 async def salud() -> dict[str, str]:
     """Endpoint simple para verificar disponibilidad."""
     return {"estado": "ok"}
+
+
+@app.get("/vehiculos/marcas", tags=["Vehiculos"])
+async def listar_marcas() -> dict[str, list[str]]:
+    """Devuelve las marcas disponibles del catalogo."""
+    try:
+        return {"marcas": obtener_marcas()}
+    except RuntimeError as error:
+        raise HTTPException(status_code=503, detail=str(error)) from error
+
+
+@app.get("/vehiculos/modelos", tags=["Vehiculos"])
+async def listar_modelos(marca: str) -> dict[str, list[str]]:
+    """Devuelve los modelos disponibles para una marca."""
+    try:
+        return {"modelos": obtener_modelos(marca)}
+    except RuntimeError as error:
+        raise HTTPException(status_code=503, detail=str(error)) from error
+
+
+@app.get("/vehiculos/anios", tags=["Vehiculos"])
+async def listar_anios(marca: str, modelo: str) -> dict[str, list[int]]:
+    """Devuelve los anios disponibles para una marca y modelo."""
+    try:
+        return {"anios": obtener_anios(marca, modelo)}
+    except RuntimeError as error:
+        raise HTTPException(status_code=503, detail=str(error)) from error
+
+
+@app.get("/vehiculos/versiones", tags=["Vehiculos"])
+async def listar_versiones(marca: str, modelo: str, anio: int) -> dict[str, list[str]]:
+    """Devuelve las versiones disponibles para una marca, modelo y anio."""
+    try:
+        return {"versiones": obtener_versiones(marca, modelo, anio)}
+    except RuntimeError as error:
+        raise HTTPException(status_code=503, detail=str(error)) from error
+
+
+@app.get("/vehiculos/opciones/formulario", response_class=HTMLResponse, tags=["Vehiculos"])
+async def renderizar_opciones_formulario_vehiculo(
+    request: Request,
+    marca: str | None = None,
+    modelo: str | None = None,
+    anio: str | None = None,
+    version: str | None = None,
+) -> HTMLResponse:
+    """Devuelve el bloque HTML con selects dependientes del catalogo."""
+    contexto = _construir_contexto_catalogo_vehiculos(
+        marca=_limpiar_opcional(marca),
+        modelo=_limpiar_opcional(modelo),
+        anio=_limpiar_opcional(anio),
+        version=_limpiar_opcional(version),
+    )
+    return templates.TemplateResponse(
+        "componentes/campos_vehiculo_catalogo.html",
+        {"request": request, **contexto},
+    )

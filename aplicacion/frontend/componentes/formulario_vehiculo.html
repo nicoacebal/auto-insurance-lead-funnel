@@ -22,7 +22,7 @@
 
   <p class="paso-indicador">Paso 1 de 4</p>
   <h3 class="paso-titulo">Contanos sobre tu vehiculo</h3>
-  <p class="texto-ayuda">Con estos datos te mostramos una estimacion inicial en segundos.</p>
+  <p class="texto-ayuda">Selecciona tu auto dentro del catalogo asegurable y te mostramos una estimacion inicial en segundos.</p>
 
   {% if error %}
   <p class="mensaje-error">{{ error }}</p>
@@ -43,46 +43,9 @@
     <input type="hidden" name="referrer" data-origen="referrer" value="{{ referrer | default('', true) }}" />
     <input type="hidden" name="landing_page" data-origen="landing_page" value="{{ landing_page | default('', true) }}" />
 
-    <label for="marca">Marca</label>
-    <input
-      id="marca"
-      name="marca"
-      type="text"
-      placeholder="Ej: Toyota"
-      value="{{ marca | default('', true) }}"
-      required
-    />
-
-    <label for="modelo">Modelo</label>
-    <input
-      id="modelo"
-      name="modelo"
-      type="text"
-      placeholder="Ej: Corolla"
-      value="{{ modelo | default('', true) }}"
-      required
-    />
-
-    <label for="anio">Anio</label>
-    <input
-      id="anio"
-      name="anio"
-      type="number"
-      min="1990"
-      placeholder="Ej: 2022"
-      value="{{ anio | default('', true) }}"
-      required
-    />
-
-    <label for="version">Version</label>
-    <input
-      id="version"
-      name="version"
-      type="text"
-      placeholder="Ej: XEI 2.0"
-      value="{{ version | default('', true) }}"
-      required
-    />
+    <div id="catalogo-vehiculo-campos">
+      {% include "componentes/campos_vehiculo_catalogo.html" %}
+    </div>
 
     <button class="boton-primario" type="submit">Calcular estimacion</button>
   </form>

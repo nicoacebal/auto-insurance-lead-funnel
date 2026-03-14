@@ -1,0 +1,79 @@
+{% if catalogo_error %}
+<p class="mensaje-aviso">
+  {{ catalogo_error }} Completa los datos luego de cargar el catalogo en Supabase.
+</p>
+{% endif %}
+
+<label for="marca">Marca</label>
+<select
+  id="marca"
+  name="marca"
+  hx-get="/vehiculos/opciones/formulario"
+  hx-trigger="change"
+  hx-target="#catalogo-vehiculo-campos"
+  hx-swap="innerHTML"
+  hx-include="#formulario-vehiculo"
+  required
+>
+  <option value="">Selecciona una marca</option>
+  {% for opcion_marca in marcas %}
+  <option value="{{ opcion_marca }}" {% if marca == opcion_marca %}selected{% endif %}>
+    {{ opcion_marca }}
+  </option>
+  {% endfor %}
+</select>
+
+<label for="modelo">Modelo</label>
+<select
+  id="modelo"
+  name="modelo"
+  hx-get="/vehiculos/opciones/formulario"
+  hx-trigger="change"
+  hx-target="#catalogo-vehiculo-campos"
+  hx-swap="innerHTML"
+  hx-include="#formulario-vehiculo"
+  {% if not marca %}disabled{% endif %}
+  required
+>
+  <option value="">{% if marca %}Selecciona un modelo{% else %}Primero elige una marca{% endif %}</option>
+  {% for opcion_modelo in modelos %}
+  <option value="{{ opcion_modelo }}" {% if modelo == opcion_modelo %}selected{% endif %}>
+    {{ opcion_modelo }}
+  </option>
+  {% endfor %}
+</select>
+
+<label for="anio">Anio</label>
+<select
+  id="anio"
+  name="anio"
+  hx-get="/vehiculos/opciones/formulario"
+  hx-trigger="change"
+  hx-target="#catalogo-vehiculo-campos"
+  hx-swap="innerHTML"
+  hx-include="#formulario-vehiculo"
+  {% if not modelo %}disabled{% endif %}
+  required
+>
+  <option value="">{% if modelo %}Selecciona un anio{% else %}Primero elige un modelo{% endif %}</option>
+  {% for opcion_anio in anios_catalogo %}
+  <option value="{{ opcion_anio }}" {% if anio == opcion_anio|string %}selected{% endif %}>
+    {{ opcion_anio }}
+  </option>
+  {% endfor %}
+</select>
+
+<label for="version">Version</label>
+<select
+  id="version"
+  name="version"
+  {% if not anio %}disabled{% endif %}
+  required
+>
+  <option value="">{% if anio %}Selecciona una version{% else %}Primero elige un anio{% endif %}</option>
+  {% for opcion_version in versiones_catalogo %}
+  <option value="{{ opcion_version }}" {% if version == opcion_version %}selected{% endif %}>
+    {{ opcion_version }}
+  </option>
+  {% endfor %}
+</select>

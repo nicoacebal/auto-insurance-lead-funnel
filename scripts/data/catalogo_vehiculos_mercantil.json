@@ -1,0 +1,2670 @@
+{
+  "total_vehiculos": 333,
+  "generado_en": "2026-03-14T01:11:50.420055",
+  "vehiculos": [
+    {
+      "id": 131432,
+      "marca": "ALEKO",
+      "modelo": "2141 S 1.8 DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 123163,
+      "marca": "ALFA ROMEO",
+      "modelo": "145 TURBO DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 123164,
+      "marca": "ALFA ROMEO",
+      "modelo": "146 1.9 TURBO DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 123184,
+      "marca": "ALFA ROMEO",
+      "modelo": "146 2.0 TI DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 130944,
+      "marca": "ARO",
+      "modelo": "10.4 4X4 TECHO RIGIDO DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 123268,
+      "marca": "ASIA",
+      "modelo": "TOPIC FURGON DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 121821,
+      "marca": "BMW",
+      "modelo": "524 TURBO DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 122497,
+      "marca": "CHEVROLET",
+      "modelo": "14000 TURBO DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 123100,
+      "marca": "CHEVROLET",
+      "modelo": "2500 HD DURAMAX DIESEL",
+      "version": null,
+      "anio": 2005,
+      "tipo": null
+    },
+    {
+      "id": 122512,
+      "marca": "CHEVROLET",
+      "modelo": "6-150 MWM TURBO DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 122465,
+      "marca": "CHEVROLET",
+      "modelo": "6000 TURBO DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 122473,
+      "marca": "CHEVROLET",
+      "modelo": "ASTRA ST. WAGON TD GLST-DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 122472,
+      "marca": "CHEVROLET",
+      "modelo": "ASTRA TD GLS T DIESEL 5P",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 122482,
+      "marca": "CHEVROLET",
+      "modelo": "BLAZER 2.5 DIESEL 4X2",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 122605,
+      "marca": "CHEVROLET",
+      "modelo": "BLAZER DLX TURBO DIESEL 4X2",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 122805,
+      "marca": "CHEVROLET",
+      "modelo": "C 10 CUSTOM 4 VEL LUXE DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 122719,
+      "marca": "CHEVROLET",
+      "modelo": "C-10 SILVERADO DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 122409,
+      "marca": "CHEVROLET",
+      "modelo": "C-10 TURBO DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 122821,
+      "marca": "CHEVROLET",
+      "modelo": "CHEYENNE 4X4 DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 122534,
+      "marca": "CHEVROLET",
+      "modelo": "CONQUEST MAXION DIESEL",
+      "version": null,
+      "anio": 1998,
+      "tipo": null
+    },
+    {
+      "id": 122573,
+      "marca": "CHEVROLET",
+      "modelo": "CORSA CITY DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 122817,
+      "marca": "CHEVROLET",
+      "modelo": "CORSA GL 1.6 4 PTAS GNC FULL",
+      "version": null,
+      "anio": 2003,
+      "tipo": null
+    },
+    {
+      "id": 122522,
+      "marca": "CHEVROLET",
+      "modelo": "CORSA GLS 1.7 DIESEL",
+      "version": null,
+      "anio": 1998,
+      "tipo": null
+    },
+    {
+      "id": 122546,
+      "marca": "CHEVROLET",
+      "modelo": "CORSA GLS 1.7 NAFTA",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 122514,
+      "marca": "CHEVROLET",
+      "modelo": "CORSA GLS WAGON DIESEL FULL",
+      "version": null,
+      "anio": 1998,
+      "tipo": null
+    },
+    {
+      "id": 122386,
+      "marca": "CHEVROLET",
+      "modelo": "D-20 CUSTOM DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 122425,
+      "marca": "CHEVROLET",
+      "modelo": "D-20 CUSTOM DIESEL DE LUXE",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 123002,
+      "marca": "CHEVROLET",
+      "modelo": "G.M.C. SUBURBAN 4X4 NAFTA",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 122455,
+      "marca": "CHEVROLET",
+      "modelo": "LUV DIESEL 4X2 CABINA SIMPLE",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 122462,
+      "marca": "CHEVROLET",
+      "modelo": "LUV DIESEL 4X2 DOBLE CABINA",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 122456,
+      "marca": "CHEVROLET",
+      "modelo": "LUV DIESEL 4X4 DOBLE CABINA",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 122457,
+      "marca": "CHEVROLET",
+      "modelo": "LUV NAFTA 4X2 CABINA SIMPLE",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 122443,
+      "marca": "CHEVROLET",
+      "modelo": "LUV NAFTA 4X4 DOBLE CABINA",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 122485,
+      "marca": "CHEVROLET",
+      "modelo": "S-10 2.2 STD NAFTA",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 122474,
+      "marca": "CHEVROLET",
+      "modelo": "S-10 2.5 TURBO DIESEL DLX",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 122476,
+      "marca": "CHEVROLET",
+      "modelo": "S-10 2.5 TURBO DIESEL STD.",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 122500,
+      "marca": "CHEVROLET",
+      "modelo": "S-10 CREW CAB STD. DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 122467,
+      "marca": "CHEVROLET",
+      "modelo": "SILVERADO 4X4 DIESEL CAB.Y 1/2",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 122493,
+      "marca": "CHEVROLET",
+      "modelo": "SILVERADO STD DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 122499,
+      "marca": "CHEVROLET",
+      "modelo": "SILVERADO STD DIESEL AA",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 122503,
+      "marca": "CHEVROLET",
+      "modelo": "VECTRA TDI 16V DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 122197,
+      "marca": "CHRYSLER",
+      "modelo": "CHEROKEE TURBO DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 122240,
+      "marca": "CHRYSLER",
+      "modelo": "GRAN CHEROKEE DIESEL W",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 122244,
+      "marca": "CHRYSLER",
+      "modelo": "GRAND CHEROKEE LIMITED DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 118799,
+      "marca": "CITROEN",
+      "modelo": "BERLINGO MULTIESPACE NAFTA 1.8",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 118762,
+      "marca": "CITROEN",
+      "modelo": "C15 DIESEL FURGON",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 118763,
+      "marca": "CITROEN",
+      "modelo": "C15 DIESEL FURGON",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 118795,
+      "marca": "CITROEN",
+      "modelo": "SAXO 1.5 DIESEL",
+      "version": null,
+      "anio": 2001,
+      "tipo": null
+    },
+    {
+      "id": 118796,
+      "marca": "CITROEN",
+      "modelo": "SAXO 1.5 DIESEL",
+      "version": null,
+      "anio": 2001,
+      "tipo": null
+    },
+    {
+      "id": 118792,
+      "marca": "CITROEN",
+      "modelo": "SAXO 1.5 DIESEL 5 PTAS.",
+      "version": null,
+      "anio": 2001,
+      "tipo": null
+    },
+    {
+      "id": 118758,
+      "marca": "CITROEN",
+      "modelo": "XANTIA ZX 1.9 DIESEL AV",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 118769,
+      "marca": "CITROEN",
+      "modelo": "ZX AVANTAGE DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 118690,
+      "marca": "DODGE",
+      "modelo": "DAKOTA SPORT DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 119187,
+      "marca": "FIAT",
+      "modelo": "147 DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 119454,
+      "marca": "FIAT",
+      "modelo": "CROMA TURBO DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 119658,
+      "marca": "FIAT",
+      "modelo": "DUCATO 14 DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 119386,
+      "marca": "FIAT",
+      "modelo": "DUNA S 1.4 GNC",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 119122,
+      "marca": "FIAT",
+      "modelo": "DUNA WEEKEND DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 119497,
+      "marca": "FIAT",
+      "modelo": "ELBA CLS DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 119362,
+      "marca": "FIAT",
+      "modelo": "FIORINO DIESEL 1.7",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 119134,
+      "marca": "FIAT",
+      "modelo": "FIORINO DIESEL FURGON",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 119546,
+      "marca": "FIAT",
+      "modelo": "FIORINO FURGON GNC",
+      "version": null,
+      "anio": 2002,
+      "tipo": null
+    },
+    {
+      "id": 119903,
+      "marca": "FIAT",
+      "modelo": "SIENA 1.4 FIRE AA GNC",
+      "version": null,
+      "anio": 2007,
+      "tipo": null
+    },
+    {
+      "id": 119553,
+      "marca": "FIAT",
+      "modelo": "SIENA EX 1.3 16V FIRE C/GNC",
+      "version": null,
+      "anio": 2002,
+      "tipo": null
+    },
+    {
+      "id": 119646,
+      "marca": "FIAT",
+      "modelo": "SIENA EX 1.6 16V FIRE C/GNC",
+      "version": null,
+      "anio": 2002,
+      "tipo": null
+    },
+    {
+      "id": 119744,
+      "marca": "FIAT",
+      "modelo": "SIENA HLX 1.8 PACK ELECTRICO",
+      "version": null,
+      "anio": 2004,
+      "tipo": null
+    },
+    {
+      "id": 119575,
+      "marca": "FIAT",
+      "modelo": "SIENA SX 1.6 PREEQUIPADO P/GNC",
+      "version": null,
+      "anio": 2000,
+      "tipo": null
+    },
+    {
+      "id": 119650,
+      "marca": "FIAT",
+      "modelo": "STRADA FIRE 1.3 MPI GNC",
+      "version": null,
+      "anio": 2004,
+      "tipo": null
+    },
+    {
+      "id": 119315,
+      "marca": "FIAT",
+      "modelo": "UNO S NAFTA 3 PTAS.",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 119316,
+      "marca": "FIAT",
+      "modelo": "UNO S NAFTA 5 PTAS.",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 120535,
+      "marca": "FORD",
+      "modelo": "BRONCO XLT DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 120300,
+      "marca": "FORD",
+      "modelo": "COURIER DIESEL 1.8 D DH",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 120626,
+      "marca": "FORD",
+      "modelo": "ECO SPORT 1.6 XL PLUS GNC",
+      "version": null,
+      "anio": 2004,
+      "tipo": null
+    },
+    {
+      "id": 120610,
+      "marca": "FORD",
+      "modelo": "ECO SPORT 1.6 XLS GNC",
+      "version": null,
+      "anio": 2004,
+      "tipo": null
+    },
+    {
+      "id": 120277,
+      "marca": "FORD",
+      "modelo": "ECONOLINE VAN DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 120232,
+      "marca": "FORD",
+      "modelo": "ESCORT 1.6 DIESEL FULL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 120197,
+      "marca": "FORD",
+      "modelo": "ESCORT CLX DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 120198,
+      "marca": "FORD",
+      "modelo": "ESCORT CLX DIESEL RURAL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 120195,
+      "marca": "FORD",
+      "modelo": "ESCORT CLX NAFTA 16V.",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 120196,
+      "marca": "FORD",
+      "modelo": "ESCORT CLX NAFTA RURAL 16V",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 120193,
+      "marca": "FORD",
+      "modelo": "ESCORT LX DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 120194,
+      "marca": "FORD",
+      "modelo": "ESCORT LX DIESEL C/AA",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 120220,
+      "marca": "FORD",
+      "modelo": "ESCORT LX DIESEL RURAL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 120202,
+      "marca": "FORD",
+      "modelo": "ESCORT LX NAFTA C/AA 16V",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 120203,
+      "marca": "FORD",
+      "modelo": "ESCORT LX NAFTA RURAL C/AA 16V",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 120274,
+      "marca": "FORD",
+      "modelo": "ESCORT NAFTA (CLX) 1.8",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 120381,
+      "marca": "FORD",
+      "modelo": "F 100 STD DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 120142,
+      "marca": "FORD",
+      "modelo": "F-100 4X4 DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 120199,
+      "marca": "FORD",
+      "modelo": "F-100 DIESEL HSD 2.5 TURBO XL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 120141,
+      "marca": "FORD",
+      "modelo": "F-100 SUPERCAB NAFTA",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 120150,
+      "marca": "FORD",
+      "modelo": "F-100 SUPERCAB STD DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 120250,
+      "marca": "FORD",
+      "modelo": "F-100 XL DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 120295,
+      "marca": "FORD",
+      "modelo": "F-100 XLT DIESEL 4.2 PLUS",
+      "version": null,
+      "anio": 1999,
+      "tipo": null
+    },
+    {
+      "id": 120222,
+      "marca": "FORD",
+      "modelo": "F-100 XLT TURBO DIESEL FULL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 120051,
+      "marca": "FORD",
+      "modelo": "F-150 DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 120052,
+      "marca": "FORD",
+      "modelo": "F-150 DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 120056,
+      "marca": "FORD",
+      "modelo": "FALCON DIESEL",
+      "version": null,
+      "anio": 2005,
+      "tipo": null
+    },
+    {
+      "id": 120868,
+      "marca": "FORD",
+      "modelo": "FIESTA 1.6 5 P EDGE PLUS GNC",
+      "version": null,
+      "anio": 2004,
+      "tipo": null
+    },
+    {
+      "id": 120371,
+      "marca": "FORD",
+      "modelo": "FIESTA CLX 1.8 DIESEL FULL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 120165,
+      "marca": "FORD",
+      "modelo": "FIESTA CLX DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 120166,
+      "marca": "FORD",
+      "modelo": "FIESTA CLX DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 120175,
+      "marca": "FORD",
+      "modelo": "FIESTA CLX DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 120186,
+      "marca": "FORD",
+      "modelo": "FIESTA CLX DIESEL LINEA NUEVA",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 120243,
+      "marca": "FORD",
+      "modelo": "FIESTA LX DIESEL 3 PTAS",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 120320,
+      "marca": "FORD",
+      "modelo": "FIESTA LX DIESEL 5 PTAS",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 120176,
+      "marca": "FORD",
+      "modelo": "FIESTA SL DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 120326,
+      "marca": "FORD",
+      "modelo": "FIESTA SPORT 1,6 NAFTA",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 120619,
+      "marca": "FORD",
+      "modelo": "FOCUS AMBIENTE 1.6 8V 5P GNC",
+      "version": null,
+      "anio": 2004,
+      "tipo": null
+    },
+    {
+      "id": 137677,
+      "marca": "FORD",
+      "modelo": "KUGA PLATINUM 2.5L HIBRIDO AT",
+      "version": null,
+      "anio": 2023,
+      "tipo": null
+    },
+    {
+      "id": 137720,
+      "marca": "FORD",
+      "modelo": "MACH-E ELECTRICO RURAL 5",
+      "version": null,
+      "anio": 2023,
+      "tipo": null
+    },
+    {
+      "id": 135804,
+      "marca": "FORD",
+      "modelo": "MONDEO 2.0 TITANIUM HIBRIDO",
+      "version": null,
+      "anio": 2021,
+      "tipo": null
+    },
+    {
+      "id": 134248,
+      "marca": "FORD",
+      "modelo": "MONDEO 2.0 VIGNALE HIBRIDO",
+      "version": null,
+      "anio": 2019,
+      "tipo": null
+    },
+    {
+      "id": 120172,
+      "marca": "FORD",
+      "modelo": "MONDEO CLX DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 120270,
+      "marca": "FORD",
+      "modelo": "MONDEO CLX DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 120161,
+      "marca": "FORD",
+      "modelo": "MONDEO CLX NAFTA",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 120275,
+      "marca": "FORD",
+      "modelo": "MONDEO CLX NAFTA",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 120265,
+      "marca": "FORD",
+      "modelo": "MONDEO GHIA RURAL NAFTA",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 120363,
+      "marca": "FORD",
+      "modelo": "RANGER DIESEL TDI 2.8 C/C 4X4",
+      "version": null,
+      "anio": 2001,
+      "tipo": null
+    },
+    {
+      "id": 120236,
+      "marca": "FORD",
+      "modelo": "RANGER XL 4X2 DIESEL C/D",
+      "version": null,
+      "anio": 1998,
+      "tipo": null
+    },
+    {
+      "id": 120241,
+      "marca": "FORD",
+      "modelo": "RANGER XL 4X4 DIESEL C/D",
+      "version": null,
+      "anio": 1998,
+      "tipo": null
+    },
+    {
+      "id": 120239,
+      "marca": "FORD",
+      "modelo": "RANGER XL 4X4 DIESEL C/SIMPLE",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 120234,
+      "marca": "FORD",
+      "modelo": "RANGER XLT 4X4 D/CAB.DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 120269,
+      "marca": "FORD",
+      "modelo": "RANGER XLT 4X4 NAFTA",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 120178,
+      "marca": "FORD",
+      "modelo": "TRANSIT 120 S DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 120179,
+      "marca": "FORD",
+      "modelo": "TRANSIT 190 L DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 120307,
+      "marca": "FORD",
+      "modelo": "TRANSIT 192 L DIESEL",
+      "version": null,
+      "anio": 1998,
+      "tipo": null
+    },
+    {
+      "id": 120221,
+      "marca": "FORD",
+      "modelo": "TRANSIT 350 LWB DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 131443,
+      "marca": "FSO",
+      "modelo": "PICK-UP DIESEL 1,9 C/CORTA",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 123852,
+      "marca": "HYUNDAI",
+      "modelo": "H 1 DIESEL",
+      "version": null,
+      "anio": 1998,
+      "tipo": null
+    },
+    {
+      "id": 124011,
+      "marca": "HYUNDAI",
+      "modelo": "IONIQ 1.6 HIBRIDO",
+      "version": null,
+      "anio": 2019,
+      "tipo": null
+    },
+    {
+      "id": 123829,
+      "marca": "HYUNDAI",
+      "modelo": "STAREX DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 123821,
+      "marca": "HYUNDAI",
+      "modelo": "XL TURBO DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 127134,
+      "marca": "ISUZU",
+      "modelo": "4X4 A.A DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 127129,
+      "marca": "ISUZU",
+      "modelo": "CABINA SIMPLE 4X2 DIESEL A.A.",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 127135,
+      "marca": "ISUZU",
+      "modelo": "CAJA LARGA 4X4 DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 127137,
+      "marca": "ISUZU",
+      "modelo": "DOBLE CABINA 4X2 DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 127167,
+      "marca": "ISUZU",
+      "modelo": "DOBLE CABINA 4X4 DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 127139,
+      "marca": "ISUZU",
+      "modelo": "DOBLE CABINA A.A. 4X2 DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 127138,
+      "marca": "ISUZU",
+      "modelo": "DOBLE CABINA DLX 4X4 DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 127213,
+      "marca": "ISUZU",
+      "modelo": "NHR 2.8 DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 127131,
+      "marca": "ISUZU",
+      "modelo": "SPACE CAB 4X2 DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 127128,
+      "marca": "ISUZU",
+      "modelo": "TROOPER 4WD LS DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 127210,
+      "marca": "ISUZU",
+      "modelo": "TROOPER HARD TOP 2.6 NAFTA",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 127211,
+      "marca": "ISUZU",
+      "modelo": "TROOPER WAGON V6 3.2 NAFTA",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 133642,
+      "marca": "IVECO",
+      "modelo": "DAILY 35 S14N FUR. H2 GNC",
+      "version": null,
+      "anio": 2019,
+      "tipo": null
+    },
+    {
+      "id": 133644,
+      "marca": "IVECO",
+      "modelo": "DAILY 35 S14N FUR. H2 GNC",
+      "version": null,
+      "anio": 2019,
+      "tipo": null
+    },
+    {
+      "id": 133646,
+      "marca": "IVECO",
+      "modelo": "DAILY 70C 14 CHASIS GNC",
+      "version": null,
+      "anio": 2019,
+      "tipo": null
+    },
+    {
+      "id": 133647,
+      "marca": "IVECO",
+      "modelo": "DAILY 70C 14 CHASIS GNC HI",
+      "version": null,
+      "anio": 2019,
+      "tipo": null
+    },
+    {
+      "id": 133648,
+      "marca": "IVECO",
+      "modelo": "STRALIS 260 S30 6X2 GNC",
+      "version": null,
+      "anio": 2019,
+      "tipo": null
+    },
+    {
+      "id": 133677,
+      "marca": "IVECO",
+      "modelo": "STRALIS 260 S33 6X2 GNC",
+      "version": null,
+      "anio": 2020,
+      "tipo": null
+    },
+    {
+      "id": 133678,
+      "marca": "IVECO",
+      "modelo": "STRALIS 440 S33T 4X2 GNC",
+      "version": null,
+      "anio": 2020,
+      "tipo": null
+    },
+    {
+      "id": 133700,
+      "marca": "IVECO",
+      "modelo": "TECTOR 160 E21 4185 MLC GNC",
+      "version": null,
+      "anio": 2020,
+      "tipo": null
+    },
+    {
+      "id": 133701,
+      "marca": "IVECO",
+      "modelo": "TECTOR 160 E21 4815 MLC GNC",
+      "version": null,
+      "anio": 2020,
+      "tipo": null
+    },
+    {
+      "id": 127251,
+      "marca": "KIA",
+      "modelo": "K 3500 DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 127274,
+      "marca": "KIA",
+      "modelo": "SPORTAGE 2.2 4X4 DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 124049,
+      "marca": "LANCIA",
+      "modelo": "PRISMA DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 128363,
+      "marca": "MAZDA",
+      "modelo": "323 F DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 128345,
+      "marca": "MAZDA",
+      "modelo": "B 2200 CABINA SIMPLE DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 128328,
+      "marca": "MAZDA",
+      "modelo": "COACH DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 132800,
+      "marca": "MELEX",
+      "modelo": "FURGON ELECTRICO",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 127662,
+      "marca": "MERC.BENZ",
+      "modelo": "L 321 DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 127834,
+      "marca": "MERC.BENZ",
+      "modelo": "SPRINTER 314 F. GNC 3550 V1",
+      "version": null,
+      "anio": 2003,
+      "tipo": null
+    },
+    {
+      "id": 124087,
+      "marca": "MITSUBISHI",
+      "modelo": "L-200 CABINA DOBLE 4WD DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 124095,
+      "marca": "MITSUBISHI",
+      "modelo": "L-200 CABINA DOBLE 4X2 DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 124080,
+      "marca": "MITSUBISHI",
+      "modelo": "L-200 CABINA SIMPLE 2WD DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 124060,
+      "marca": "MITSUBISHI",
+      "modelo": "L-300 PANEL VAN DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 128448,
+      "marca": "NISSAN",
+      "modelo": "DOBLE CABINA 3.2 DX 4X4 DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 128419,
+      "marca": "NISSAN",
+      "modelo": "DOBLE CABINA 4X2 DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 128404,
+      "marca": "NISSAN",
+      "modelo": "DOBLE CABINA 4X4 DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 128472,
+      "marca": "NISSAN",
+      "modelo": "DOBLE CABINA DIESEL 2,7",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 128414,
+      "marca": "NISSAN",
+      "modelo": "PATHFINDER 2.7 DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 128409,
+      "marca": "NISSAN",
+      "modelo": "PATROL H. TOP DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 138689,
+      "marca": "NISSAN",
+      "modelo": "PATROL SGL (NAFTA)",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 128436,
+      "marca": "NISSAN",
+      "modelo": "SERENA SLX 2.0 NAFTA V 7.P",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 128417,
+      "marca": "NISSAN",
+      "modelo": "SERENA SLX 2.3 DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 128446,
+      "marca": "NISSAN",
+      "modelo": "SLX 4X2 2.7 DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 121035,
+      "marca": "PEUGEOT",
+      "modelo": "205 GL NAFTA",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 121036,
+      "marca": "PEUGEOT",
+      "modelo": "205 GL NAFTA",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 121022,
+      "marca": "PEUGEOT",
+      "modelo": "205 JUNIOR 1.8 DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 121108,
+      "marca": "PEUGEOT",
+      "modelo": "206 XRD DIESEL 5 PTAS",
+      "version": null,
+      "anio": 1999,
+      "tipo": null
+    },
+    {
+      "id": 121088,
+      "marca": "PEUGEOT",
+      "modelo": "206 XRD DIESEL 5 PTAS PACK",
+      "version": null,
+      "anio": 1999,
+      "tipo": null
+    },
+    {
+      "id": 121189,
+      "marca": "PEUGEOT",
+      "modelo": "306 BOREAL 1,80 NAFTA",
+      "version": null,
+      "anio": 1999,
+      "tipo": null
+    },
+    {
+      "id": 121176,
+      "marca": "PEUGEOT",
+      "modelo": "306 SOLEIL HI 1.9 DIESEL",
+      "version": null,
+      "anio": 2000,
+      "tipo": null
+    },
+    {
+      "id": 121224,
+      "marca": "PEUGEOT",
+      "modelo": "306 XN 1.8 NAFTA 5PTAS. C/AA",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 121024,
+      "marca": "PEUGEOT",
+      "modelo": "306 XR DIESEL FULL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 121074,
+      "marca": "PEUGEOT",
+      "modelo": "405 SIGNATURE NAFTA",
+      "version": null,
+      "anio": 1998,
+      "tipo": null
+    },
+    {
+      "id": 121076,
+      "marca": "PEUGEOT",
+      "modelo": "405 SIGNATURE TURBO DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 121078,
+      "marca": "PEUGEOT",
+      "modelo": "405 SILAGE DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 121200,
+      "marca": "PEUGEOT",
+      "modelo": "406 SV DT 2.0 DIESEL",
+      "version": null,
+      "anio": 2000,
+      "tipo": null
+    },
+    {
+      "id": 120913,
+      "marca": "PEUGEOT",
+      "modelo": "504 G  NAFTA",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 120904,
+      "marca": "PEUGEOT",
+      "modelo": "504 G DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 120912,
+      "marca": "PEUGEOT",
+      "modelo": "504 GD PP DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 121218,
+      "marca": "PEUGEOT",
+      "modelo": "504 SRD TCA DIESEL FULL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 121038,
+      "marca": "PEUGEOT",
+      "modelo": "BOXER DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 121042,
+      "marca": "PEUGEOT",
+      "modelo": "BOXER DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 121043,
+      "marca": "PEUGEOT",
+      "modelo": "BOXER DIESEL 320M T/LARGO",
+      "version": null,
+      "anio": 2000,
+      "tipo": null
+    },
+    {
+      "id": 121345,
+      "marca": "PEUGEOT",
+      "modelo": "PARTNER 1.4 GNC",
+      "version": null,
+      "anio": 2003,
+      "tipo": null
+    },
+    {
+      "id": 121171,
+      "marca": "PEUGEOT",
+      "modelo": "PARTNER 1.9 DIESEL CONFORT",
+      "version": null,
+      "anio": 1998,
+      "tipo": null
+    },
+    {
+      "id": 121328,
+      "marca": "PEUGEOT",
+      "modelo": "PARTNER BREAK DIESEL",
+      "version": null,
+      "anio": 1998,
+      "tipo": null
+    },
+    {
+      "id": 121082,
+      "marca": "PEUGEOT",
+      "modelo": "PARTNER DIESEL 1.9",
+      "version": null,
+      "anio": 1998,
+      "tipo": null
+    },
+    {
+      "id": 121081,
+      "marca": "PEUGEOT",
+      "modelo": "PARTNER DIESEL CONFORT 1.9",
+      "version": null,
+      "anio": 1998,
+      "tipo": null
+    },
+    {
+      "id": 121097,
+      "marca": "PEUGEOT",
+      "modelo": "PARTNER NAFTA",
+      "version": null,
+      "anio": 1998,
+      "tipo": null
+    },
+    {
+      "id": 121669,
+      "marca": "PEUGEOT",
+      "modelo": "PARTNER URBANA 1.4 CONF.AA GNC",
+      "version": null,
+      "anio": 2003,
+      "tipo": null
+    },
+    {
+      "id": 131818,
+      "marca": "PIAGGIO",
+      "modelo": "PORTER FURGON DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 133065,
+      "marca": "POLARIS",
+      "modelo": "POLARIS RZR 1000 XP (NAFTA",
+      "version": null,
+      "anio": 2014,
+      "tipo": null
+    },
+    {
+      "id": 126270,
+      "marca": "RENAULT",
+      "modelo": "19 RE DIESEL",
+      "version": null,
+      "anio": 1998,
+      "tipo": null
+    },
+    {
+      "id": 126271,
+      "marca": "RENAULT",
+      "modelo": "19 RE DIESEL AA",
+      "version": null,
+      "anio": 1998,
+      "tipo": null
+    },
+    {
+      "id": 126341,
+      "marca": "RENAULT",
+      "modelo": "19 RE DIESEL AA DA",
+      "version": null,
+      "anio": 1998,
+      "tipo": null
+    },
+    {
+      "id": 126340,
+      "marca": "RENAULT",
+      "modelo": "19 RE DIESEL DA",
+      "version": null,
+      "anio": 1998,
+      "tipo": null
+    },
+    {
+      "id": 126225,
+      "marca": "RENAULT",
+      "modelo": "19 RL DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 126345,
+      "marca": "RENAULT",
+      "modelo": "19 RL TRIC DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 126346,
+      "marca": "RENAULT",
+      "modelo": "19 RL TRIC DIESEL AA DA",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 126344,
+      "marca": "RENAULT",
+      "modelo": "19 RL TRIC DIESEL DA",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 126350,
+      "marca": "RENAULT",
+      "modelo": "19 RN BIC DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 126242,
+      "marca": "RENAULT",
+      "modelo": "19 RN DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 126243,
+      "marca": "RENAULT",
+      "modelo": "19 RN DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 126351,
+      "marca": "RENAULT",
+      "modelo": "19 RN DIESEL TRIC AA DA PK2",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 126565,
+      "marca": "RENAULT",
+      "modelo": "19 RS DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 126231,
+      "marca": "RENAULT",
+      "modelo": "21 NEVADA RN DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 126363,
+      "marca": "RENAULT",
+      "modelo": "21 RN BREAK M2100 DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 126227,
+      "marca": "RENAULT",
+      "modelo": "21 RN SEDAN DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 137867,
+      "marca": "RENAULT",
+      "modelo": "C26-KWID E-TECH ELECTRICO",
+      "version": null,
+      "anio": 2023,
+      "tipo": null
+    },
+    {
+      "id": 126794,
+      "marca": "RENAULT",
+      "modelo": "CLIO 2 1.6 GNC 4P AUTHET. AA",
+      "version": null,
+      "anio": 2003,
+      "tipo": null
+    },
+    {
+      "id": 126820,
+      "marca": "RENAULT",
+      "modelo": "CLIO 2 F2 1.6 4P AUTHENT. GNC",
+      "version": null,
+      "anio": 2003,
+      "tipo": null
+    },
+    {
+      "id": 126596,
+      "marca": "RENAULT",
+      "modelo": "CLIO 2 RN DIESEL 4 P F8Q NA AA",
+      "version": null,
+      "anio": 2000,
+      "tipo": null
+    },
+    {
+      "id": 126592,
+      "marca": "RENAULT",
+      "modelo": "CLIO 2 RN DIESEL 4 P F8Q NAC",
+      "version": null,
+      "anio": 2000,
+      "tipo": null
+    },
+    {
+      "id": 126563,
+      "marca": "RENAULT",
+      "modelo": "CLIO 2 RN DIESEL 4 PUERTAS",
+      "version": null,
+      "anio": 1999,
+      "tipo": null
+    },
+    {
+      "id": 126560,
+      "marca": "RENAULT",
+      "modelo": "CLIO 2 RN DIESEL 4 PUERTAS AA",
+      "version": null,
+      "anio": 1999,
+      "tipo": null
+    },
+    {
+      "id": 126543,
+      "marca": "RENAULT",
+      "modelo": "CLIO 2 RN DIESEL 5 PUERTAS",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 126544,
+      "marca": "RENAULT",
+      "modelo": "CLIO 2 RN DIESEL 5 PUERTAS AA",
+      "version": null,
+      "anio": 2000,
+      "tipo": null
+    },
+    {
+      "id": 126568,
+      "marca": "RENAULT",
+      "modelo": "CLIO 2 RT 4 PUERTAS DIESEL",
+      "version": null,
+      "anio": 1999,
+      "tipo": null
+    },
+    {
+      "id": 126538,
+      "marca": "RENAULT",
+      "modelo": "CLIO 2 RT 5 PUERTAS DIESEL",
+      "version": null,
+      "anio": 1999,
+      "tipo": null
+    },
+    {
+      "id": 126595,
+      "marca": "RENAULT",
+      "modelo": "CLIO 2 RT DIESEL 4 P F8Q NAC",
+      "version": null,
+      "anio": 2000,
+      "tipo": null
+    },
+    {
+      "id": 126275,
+      "marca": "RENAULT",
+      "modelo": "CLIO DIESEL 5P.DA.AA.",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 126382,
+      "marca": "RENAULT",
+      "modelo": "CLIO RL 3P DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 126384,
+      "marca": "RENAULT",
+      "modelo": "CLIO RL 3P DIESEL DA AA",
+      "version": null,
+      "anio": 1998,
+      "tipo": null
+    },
+    {
+      "id": 126385,
+      "marca": "RENAULT",
+      "modelo": "CLIO RL 3P DIESEL FIII",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 126238,
+      "marca": "RENAULT",
+      "modelo": "CLIO RL 5P DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 126239,
+      "marca": "RENAULT",
+      "modelo": "CLIO RL 5P DIESEL DA",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 126388,
+      "marca": "RENAULT",
+      "modelo": "CLIO RL 5P DIESEL DA AA",
+      "version": null,
+      "anio": 1998,
+      "tipo": null
+    },
+    {
+      "id": 126389,
+      "marca": "RENAULT",
+      "modelo": "CLIO RL 5P DIESEL FIII",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 126235,
+      "marca": "RENAULT",
+      "modelo": "CLIO RL DIESEL 3 PTAS.",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 126383,
+      "marca": "RENAULT",
+      "modelo": "CLIO RL DIESEL 3P DA",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 126289,
+      "marca": "RENAULT",
+      "modelo": "CLIO RN 3P DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 126396,
+      "marca": "RENAULT",
+      "modelo": "CLIO RN 5P DIESEL PK",
+      "version": null,
+      "anio": 1998,
+      "tipo": null
+    },
+    {
+      "id": 126296,
+      "marca": "RENAULT",
+      "modelo": "CLIO RN 5P DIESEL PK AA",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 126552,
+      "marca": "RENAULT",
+      "modelo": "CLIO RT 1.9 DIESEL 3 PTAS",
+      "version": null,
+      "anio": 2000,
+      "tipo": null
+    },
+    {
+      "id": 126317,
+      "marca": "RENAULT",
+      "modelo": "CLIO RT 5P DIESEL",
+      "version": null,
+      "anio": 1998,
+      "tipo": null
+    },
+    {
+      "id": 126404,
+      "marca": "RENAULT",
+      "modelo": "EXPRESS NAFTA 1.6 RL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 126306,
+      "marca": "RENAULT",
+      "modelo": "EXPRESS RL DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 126795,
+      "marca": "RENAULT",
+      "modelo": "KANGOO EXPRESS RL 1.6 GNC",
+      "version": null,
+      "anio": 2003,
+      "tipo": null
+    },
+    {
+      "id": 126600,
+      "marca": "RENAULT",
+      "modelo": "KANGOO EXPRESS RN DIESEL",
+      "version": null,
+      "anio": 1999,
+      "tipo": null
+    },
+    {
+      "id": 126824,
+      "marca": "RENAULT",
+      "modelo": "KANGOO RL 1.6 GNC (2PLC)",
+      "version": null,
+      "anio": 2003,
+      "tipo": null
+    },
+    {
+      "id": 126791,
+      "marca": "RENAULT",
+      "modelo": "KANGOO RL 1.6 GNC AA (2 PLC)",
+      "version": null,
+      "anio": 2003,
+      "tipo": null
+    },
+    {
+      "id": 126416,
+      "marca": "RENAULT",
+      "modelo": "KANGOO RL DIESEL ABCP",
+      "version": null,
+      "anio": 2000,
+      "tipo": null
+    },
+    {
+      "id": 126291,
+      "marca": "RENAULT",
+      "modelo": "KANGOO RN 1.9 DIESEL",
+      "version": null,
+      "anio": 1999,
+      "tipo": null
+    },
+    {
+      "id": 126241,
+      "marca": "RENAULT",
+      "modelo": "LAGUNA RT DIESEL ABC",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 126422,
+      "marca": "RENAULT",
+      "modelo": "LAGUNA RT DIESEL ABCP",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 126430,
+      "marca": "RENAULT",
+      "modelo": "LAGUNA RXE T.DIESEL",
+      "version": null,
+      "anio": 1998,
+      "tipo": null
+    },
+    {
+      "id": 126439,
+      "marca": "RENAULT",
+      "modelo": "MASTER CORTA DIESEL",
+      "version": null,
+      "anio": 1999,
+      "tipo": null
+    },
+    {
+      "id": 126828,
+      "marca": "RENAULT",
+      "modelo": "MEGANE 2 RN 4P. GNC EXPRESSION",
+      "version": null,
+      "anio": 2004,
+      "tipo": null
+    },
+    {
+      "id": 137957,
+      "marca": "RENAULT",
+      "modelo": "MEGANE E-TECH ELECTRICO",
+      "version": null,
+      "anio": 2024,
+      "tipo": null
+    },
+    {
+      "id": 126812,
+      "marca": "RENAULT",
+      "modelo": "MEGANE F/2 RL 4P AUTH. ECO GNC",
+      "version": null,
+      "anio": 2004,
+      "tipo": null
+    },
+    {
+      "id": 126464,
+      "marca": "RENAULT",
+      "modelo": "MEGANE RT BIC T.DIESEL",
+      "version": null,
+      "anio": 1998,
+      "tipo": null
+    },
+    {
+      "id": 126470,
+      "marca": "RENAULT",
+      "modelo": "MEGANE RT TRIC T.DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 126497,
+      "marca": "RENAULT",
+      "modelo": "TRAFIC CORTA DIESEL",
+      "version": null,
+      "anio": 1998,
+      "tipo": null
+    },
+    {
+      "id": 126498,
+      "marca": "RENAULT",
+      "modelo": "TRAFIC CORTA NAFTA",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 126499,
+      "marca": "RENAULT",
+      "modelo": "TRAFIC CORTA NAFTA 2.2",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 126500,
+      "marca": "RENAULT",
+      "modelo": "TRAFIC CORTA NAFTA 2LT",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 126501,
+      "marca": "RENAULT",
+      "modelo": "TRAFIC CORTA NAFTA S/P.LT",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 126287,
+      "marca": "RENAULT",
+      "modelo": "TRAFIC CORTO T3IJ DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 126502,
+      "marca": "RENAULT",
+      "modelo": "TRAFIC LARGA DIESEL",
+      "version": null,
+      "anio": 1998,
+      "tipo": null
+    },
+    {
+      "id": 126503,
+      "marca": "RENAULT",
+      "modelo": "TRAFIC LARGA DIESEL DA",
+      "version": null,
+      "anio": 1998,
+      "tipo": null
+    },
+    {
+      "id": 126504,
+      "marca": "RENAULT",
+      "modelo": "TRAFIC LARGA NAFTA 2.2",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 126505,
+      "marca": "RENAULT",
+      "modelo": "TRAFIC LARGA NAFTA DA",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 126507,
+      "marca": "RENAULT",
+      "modelo": "TRAFIC LARGO NAFTA",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 126514,
+      "marca": "RENAULT",
+      "modelo": "TRAFIC RODEO DIESEL C/CJ",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 126515,
+      "marca": "RENAULT",
+      "modelo": "TRAFIC RODEO DIESEL DA",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 126516,
+      "marca": "RENAULT",
+      "modelo": "TRAFIC RODEO DIESEL S/CJ",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 126172,
+      "marca": "RENAULT",
+      "modelo": "TRAFIC RODEO DIESEL TA-83",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 126542,
+      "marca": "RENAULT",
+      "modelo": "TRAFIC T-310 DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 126176,
+      "marca": "RENAULT",
+      "modelo": "TRAFIC T-312 DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 126177,
+      "marca": "RENAULT",
+      "modelo": "TRAFIC T-313 DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 126564,
+      "marca": "RENAULT",
+      "modelo": "TRAFIC T315 DIESEL",
+      "version": null,
+      "anio": 2000,
+      "tipo": null
+    },
+    {
+      "id": 126517,
+      "marca": "RENAULT",
+      "modelo": "TRAFIC T31J CORTO DIESEL",
+      "version": null,
+      "anio": 1998,
+      "tipo": null
+    },
+    {
+      "id": 126214,
+      "marca": "RENAULT",
+      "modelo": "TRAFIC TA-12 DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 126104,
+      "marca": "RENAULT",
+      "modelo": "TRAFIC TA-13 DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 126171,
+      "marca": "RENAULT",
+      "modelo": "TRAFIC TA-52 DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 128940,
+      "marca": "ROVER",
+      "modelo": "400 DIESEL",
+      "version": null,
+      "anio": 2000,
+      "tipo": null
+    },
+    {
+      "id": 128921,
+      "marca": "ROVER",
+      "modelo": "420 DI TURBO DIESEL 4 P.",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 128913,
+      "marca": "ROVER",
+      "modelo": "420 DI TURBO DIESEL 5 P.",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 138225,
+      "marca": "SCANIA",
+      "modelo": "G 410 A 4X2 GNC CAB.",
+      "version": null,
+      "anio": 2020,
+      "tipo": null
+    },
+    {
+      "id": 138007,
+      "marca": "SCANIA",
+      "modelo": "P 340 A  4X2 GNC CAB. DORMIT.",
+      "version": null,
+      "anio": 2020,
+      "tipo": null
+    },
+    {
+      "id": 138362,
+      "marca": "SCANIA",
+      "modelo": "R 410 A 4X2 GNC",
+      "version": null,
+      "anio": 2024,
+      "tipo": null
+    },
+    {
+      "id": 138447,
+      "marca": "SCANIA",
+      "modelo": "R 410 A 6X2 GNC",
+      "version": null,
+      "anio": 2024,
+      "tipo": null
+    },
+    {
+      "id": 129285,
+      "marca": "SEAT",
+      "modelo": "CORDOBA GLX 1.9 DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 129282,
+      "marca": "SEAT",
+      "modelo": "CORDOBA GLX 1.9 TURBO DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 129291,
+      "marca": "SEAT",
+      "modelo": "IBIZA GTI 16V NAFTA",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 129290,
+      "marca": "SEAT",
+      "modelo": "INCA 1.9 DIESEL ENTRY",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 129289,
+      "marca": "SEAT",
+      "modelo": "INCA DIESEL 1.9",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 129286,
+      "marca": "SEAT",
+      "modelo": "TOLEDO CLX 1.9 TURBO DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 129287,
+      "marca": "SEAT",
+      "modelo": "TOLEDO D SE DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 128731,
+      "marca": "SSANGYONG",
+      "modelo": "KORANDO RS 4X4 FAMILIAR DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 128734,
+      "marca": "SSANGYONG",
+      "modelo": "MUSSO 4X4 DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 128743,
+      "marca": "SSANGYONG",
+      "modelo": "MUSSO 602 TURBO DIESEL",
+      "version": null,
+      "anio": 1999,
+      "tipo": null
+    },
+    {
+      "id": 128732,
+      "marca": "SSANGYONG",
+      "modelo": "MUSSO DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 128733,
+      "marca": "SSANGYONG",
+      "modelo": "MUSSO DIESEL MANUAL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 124236,
+      "marca": "SUZUKI",
+      "modelo": "MARUTI GIPSY 4X4 DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 124256,
+      "marca": "SUZUKI",
+      "modelo": "MARUTI GIPSY 4X4 NAFTA",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 124298,
+      "marca": "SUZUKI",
+      "modelo": "SANTANA JX 1.9 DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 124240,
+      "marca": "SUZUKI",
+      "modelo": "SIDEKICK JLX DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 124255,
+      "marca": "SUZUKI",
+      "modelo": "SIDEKICK JLX NAFTA",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 131377,
+      "marca": "TATA ENGI.",
+      "modelo": "SUMO DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 124462,
+      "marca": "TOYOTA",
+      "modelo": "4 RUNNER DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 124518,
+      "marca": "TOYOTA",
+      "modelo": "CARINA E DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 124453,
+      "marca": "TOYOTA",
+      "modelo": "HILUX 4X4 DIESEL CAB.DOBLE STD",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 124465,
+      "marca": "TOYOTA",
+      "modelo": "HILUX DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 124475,
+      "marca": "TOYOTA",
+      "modelo": "HILUX SW4 TURBO DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 124595,
+      "marca": "TOYOTA",
+      "modelo": "LAND CRUISER V6 (NAFTA)",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 139231,
+      "marca": "TOYOTA",
+      "modelo": "YARIS CROSS HVE HIBRIDO 5P",
+      "version": null,
+      "anio": 2025,
+      "tipo": null
+    },
+    {
+      "id": 125156,
+      "marca": "VOLKSWAGEN",
+      "modelo": "BORA 2.0 DIESEL",
+      "version": null,
+      "anio": 1999,
+      "tipo": null
+    },
+    {
+      "id": 125209,
+      "marca": "VOLKSWAGEN",
+      "modelo": "CADDY 1.6 MI C/GNC",
+      "version": null,
+      "anio": 2002,
+      "tipo": null
+    },
+    {
+      "id": 125048,
+      "marca": "VOLKSWAGEN",
+      "modelo": "CADDY FURGON DIESEL 1.9",
+      "version": null,
+      "anio": 1998,
+      "tipo": null
+    },
+    {
+      "id": 125069,
+      "marca": "VOLKSWAGEN",
+      "modelo": "CADDY FURGON NAFTA",
+      "version": null,
+      "anio": 1998,
+      "tipo": null
+    },
+    {
+      "id": 125009,
+      "marca": "VOLKSWAGEN",
+      "modelo": "PASAT GL VARIANT DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 125239,
+      "marca": "VOLKSWAGEN",
+      "modelo": "POLO 1.6 COMFORTLINE C/GNC",
+      "version": null,
+      "anio": 2002,
+      "tipo": null
+    },
+    {
+      "id": 125237,
+      "marca": "VOLKSWAGEN",
+      "modelo": "POLO 1.6 FORMAT C/GNC",
+      "version": null,
+      "anio": 2002,
+      "tipo": null
+    },
+    {
+      "id": 125238,
+      "marca": "VOLKSWAGEN",
+      "modelo": "POLO 1.6 TRENDLINE C/GNC",
+      "version": null,
+      "anio": 2002,
+      "tipo": null
+    },
+    {
+      "id": 125031,
+      "marca": "VOLKSWAGEN",
+      "modelo": "POLO CLASSIC NAFTA FULL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 125044,
+      "marca": "VOLKSWAGEN",
+      "modelo": "SAVEIRO CL DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 124955,
+      "marca": "VOLKSWAGEN",
+      "modelo": "SENDA DIESEL",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 124986,
+      "marca": "VOLKSWAGEN",
+      "modelo": "SENDA DIESEL A.A.",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    },
+    {
+      "id": 124984,
+      "marca": "VOLKSWAGEN",
+      "modelo": "SENDA NAFTA A.A.",
+      "version": null,
+      "anio": 1997,
+      "tipo": null
+    }
+  ]
+}
