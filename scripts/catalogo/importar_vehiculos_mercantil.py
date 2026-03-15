@@ -5,11 +5,10 @@ La autenticacion contra la API se realiza mediante headers:
 - ocp-apim-subscription-key: <API_KEY>
 """
 
-from __future__ import annotations
-from datetime import datetime
 import json
 import os
 from dataclasses import dataclass
+from datetime import datetime
 from pathlib import Path
 from typing import Any
 from urllib.parse import urljoin
@@ -19,11 +18,11 @@ from dotenv import load_dotenv
 from supabase import Client, create_client
 
 API_CATALOGO_PATH = "/api_integracion_productos/vehiculos/marca-modelo"
-SALIDA_CATALOGO_PATH = Path("data") / "catalogo_vehiculos_mercantil.json"
 TABLA_VEHICULOS = "vehiculos"
 LOTE_INSERCION = 500
-RUTA_RAIZ = Path(__file__).resolve().parents[1]
+RUTA_RAIZ = Path(__file__).resolve().parents[2]
 RUTA_ENV = RUTA_RAIZ / ".env"
+SALIDA_CATALOGO_PATH = RUTA_RAIZ / "data" / "catalogo_vehiculos_mercantil.json"
 ANIO_INICIO_CATALOGO = 1997
 COMBUSTIBLES_BUSQUEDA = ["nafta", "diesel", "gnc", "hibrido", "electrico"]
 

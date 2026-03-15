@@ -1,110 +1,131 @@
-﻿# Landing de Cotizacion de Seguros de Autos
+﻿# Auto Insurance Lead Funnel
 
-Proyecto inicial para construir una landing page profesional de cotizacion de seguros de autos con enfoque en conversion, calidad tecnica y documentacion para portfolio.
+Plataforma en construccion para captacion y cotizacion digital de seguros automotor, orientada a brokers que necesitan combinar conversion comercial, integracion con aseguradora y automatizacion operativa.
 
-## Objetivo
+## Overview
 
-Implementar una base solida para evolucionar hacia un flujo de formulario paso a paso y cotizacion real, manteniendo separacion clara entre documentacion, backend, frontend y base de datos.
+El repositorio combina dos realidades:
 
-## Stack Tecnologico
+- una implementacion operativa actual en `aplicacion/`, basada en FastAPI + Jinja2 + HTMX + Supabase,
+- una estructura nueva de arquitectura objetivo para evolucionar a un sistema productivo por capas.
 
-- Python 3.12+
-- FastAPI
-- Jinja2
-- HTMX
-- Supabase
+El foco del proyecto es:
 
-## Estructura del Repositorio
+- captar leads desde una landing optimizada,
+- trabajar con catalogo vehicular asegurable real,
+- integrar Mercantil Andina / Sigma,
+- almacenar cotizaciones y leads en Supabase,
+- disparar acciones operativas por WhatsApp,
+- preparar validaciones asistidas por IA.
+
+## Architecture Summary
+
+Arquitectura objetivo:
+
+- `frontend landing`
+- `backend api`
+- `quotation engine`
+- `mercantil integrations`
+- `database`
+- `ai validation agent`
+- `whatsapp messaging`
+
+Estado actual:
+
+- el prototipo funcional vive en `aplicacion/`,
+- la estructura nueva vive en `backend/`, `agents/`, `messaging/`, `infra/` y `docs/`.
+
+## Current Status
+
+Ya existe soporte para:
+
+- landing multi-paso con HTMX,
+- persistencia de leads en Supabase,
+- catalogo de vehiculos en Supabase,
+- endpoints internos de catalogo (`marcas`, `modelos`, `anios`, `versiones`),
+- scripts de scraping/catalogo Mercantil,
+- scripts de discovery de endpoints,
+- smoke tests de acceso a la API de catalogo.
+
+## Repository Structure
 
 ```text
 auto-insurance-lead-funnel/
-├─ docs/
-│  ├─ producto-definicion.md
-│  ├─ arquitectura-tecnica.md
-│  └─ roadmap.md
-├─ aplicacion/
-│  ├─ backend/
-│  │  └─ main.py
-│  ├─ frontend/
-│  │  ├─ plantillas/
-│  │  │  └─ landing.html
-│  │  ├─ componentes/
-│  │  │  └─ .gitkeep
-│  │  └─ estaticos/
-│  │     ├─ css/
-│  │     │  └─ estilos.css
-│  │     └─ js/
-│  │        └─ app.js
-│  └─ base_datos/
-│     └─ esquema.sql
-└─ requirements.txt
+├── README.md
+├── docs/
+├── data/
+├── scripts/
+│   ├── catalogo/
+│   ├── discovery/
+│   ├── tests/
+│   └── legacy/
+├── backend/
+│   ├── api/
+│   ├── services/
+│   ├── models/
+│   └── integrations/
+├── agents/
+├── messaging/
+├── infra/
+├── aplicacion/
+└── requirements.txt
 ```
 
-## Puesta en Marcha
+Notas:
+
+- `aplicacion/` se conserva como implementacion funcional heredada.
+- `docs/legacy/` preserva documentacion anterior para referencia.
+- `data/` contiene outputs operativos como catalogos descargados.
+
+## Getting Started
 
 1. Crear entorno virtual.
 2. Instalar dependencias.
-3. Iniciar servidor de desarrollo.
+3. Configurar variables de entorno.
+4. Ejecutar el backend actual o los scripts necesarios.
 
 ```bash
 python -m venv .venv
 . .venv/Scripts/activate
 pip install -r requirements.txt
+```
+
+### Variables de entorno minimas
+
+```env
+SUPABASE_URL=
+SUPABASE_KEY=
+MA_TOKEN=
+MA_API_KEY=
+```
+
+### Ejecutar la app actual
+
+```bash
 uvicorn aplicacion.backend.main:app --reload
 ```
 
-Abrir `http://127.0.0.1:8000` para ver la landing.
+### Ejecutar scripts principales
 
-## Variables de Entorno
-
-El proyecto utiliza un archivo `.env` en la raiz del repositorio. Ese archivo no debe versionarse.
-
-Variables principales:
-
-- `SUPABASE_URL`
-- `SUPABASE_KEY`
-- `MA_PORTAL_BASE_URL`
-- `MA_TOKEN`
-- `MA_API_KEY`
-- `MA_CATALOGO_FABRICADO`
-- `MA_CATALOGO_PAGE_SIZE`
-- `MA_CATALOGO_TIPOS`
-- `MA_CATALOGO_CON_VALOR`
-
-Ejemplo orientativo:
-
-```env
-SUPABASE_URL=https://tu-proyecto.supabase.co
-SUPABASE_KEY=tu_clave
-
-MA_PORTAL_BASE_URL=https://productos.mercantilandina.com.ar
-MA_TOKEN=
-MA_API_KEY=
-
-MA_CATALOGO_FABRICADO=2026
-MA_CATALOGO_PAGE_SIZE=5000
-MA_CATALOGO_TIPOS=1;2;3;8;9;21;4;5;6;17
-MA_CATALOGO_CON_VALOR=false
+```bash
+python scripts/catalogo/importar_vehiculos_mercantil.py
+python scripts/discovery/probar_endpoints_mercantil.py
+python scripts/discovery/descubrir_endpoints_mercantil.py
+python scripts/tests/test_catalogo.py
 ```
 
-Notas de seguridad:
+## Documentation
 
-- `.env` esta ignorado en `.gitignore`.
-- El archivo de catalogo descargado tambien se ignora para evitar publicar datos operativos innecesarios.
-- El script de importacion no imprime secretos y utiliza `Authorization: Bearer <JWT>` junto con `ocp-apim-subscription-key`.
+La documentacion principal vive en [docs](./docs):
 
-## Estado Actual
+- `00-resumen-ejecutivo.md`
+- `01-estado-actual.md`
+- `02-plan-maestro.md`
+- `03-arquitectura.md`
+- `04-modelo-de-datos.md`
+- `05-integracion-mercantil.md`
+- `06-roadmap.md`
 
-- Base del proyecto creada.
-- Landing multi-paso con FastAPI + Jinja2 + HTMX.
-- Persistencia de leads en Supabase con deduplicacion por `email + telefono`.
-- API interna de catalogo asegurable (`marcas`, `modelos`, `anios`, `versiones`).
-- Formulario de vehiculo conectado a selects dinamicos HTMX.
-- Script de importacion para descargar y cargar el catalogo de Mercantil Andina en Supabase usando headers autenticados.
+## Migration Note
 
-## Proximos Pasos
-
-- Construir formulario paso a paso con validaciones.
-- Ejecutar la importacion real del catalogo con `MA_TOKEN` y `MA_API_KEY` vigentes.
-- Reemplazar la cotizacion simulada por una API real de aseguradora.
-- Incorporar observabilidad y analitica operativa.
+La siguiente etapa recomendada es migrar la logica hoy ubicada en `aplicacion/backend/` hacia los modulos nuevos de `backend/` sin interrumpir el flujo comercial ya operativo.
