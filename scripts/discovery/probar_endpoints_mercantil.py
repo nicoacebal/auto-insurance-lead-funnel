@@ -22,7 +22,8 @@ import requests
 from dotenv import load_dotenv
 
 BASE_URL = "https://productos.mercantilandina.com.ar/api_integracion_productos/"
-DIRECTORIO_SALIDA = Path("scripts") / "salidas_api_mercantil"
+RUTA_RAIZ = Path(__file__).resolve().parents[2]
+DIRECTORIO_SALIDA = RUTA_RAIZ / "scripts" / "discovery" / "salidas_api_mercantil"
 TIMEOUT = 10
 
 load_dotenv()
