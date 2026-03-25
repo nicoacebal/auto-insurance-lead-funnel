@@ -1,0 +1,11 @@
+antiguedad=1
+carroceria_tipo=12
+categoria_tipo=10
+vehiculo_tipo=4
+uso_tipo=14
+suma_asegurada=262289500
+no_rodamiento=0
+productor_id=51262
+ramo_codigo=05
+fecha=2026-03-24T18:43:16.876Z
+localidad_codigo=142501

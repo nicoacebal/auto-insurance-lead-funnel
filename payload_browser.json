@@ -1,0 +1,34 @@
+{
+    "productor": 51262,
+    "bonificacion": 0,
+    "recargo": 25,
+    "comision": 20,
+    "categoria_iva": "1",
+    "ajuste_suma": "0",
+    "periodo": 1,
+    "cuota": 1,
+    "tipo_pago": "C",
+    "desde": "2026-03-24T01:58:30.221Z",
+    "moneda": 1,
+    "item": {
+        "vehiculo_id": 125822,
+        "anio_modelo": 2025,
+        "ubicacion": 1425,
+        "suma_asegurada": 167304500,
+        "uso_vehiculo": "14",
+        "es_0km": false,
+        "gnc": false,
+        "franquicia": "0",
+        "productos_tecnicos": [
+            "050926",
+            "050927",
+            "050923",
+            "050925",
+            "050800"
+        ],
+        "rastreo": 0,
+        "adicionales": [],
+        "accesorios": []
+    },
+    "canal_cotizacion": "DELTA"
+}

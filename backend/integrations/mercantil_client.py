@@ -11,27 +11,17 @@ from __future__ import annotations
 
 import logging
 import os
-from pathlib import Path
 from typing import Any
 from urllib.parse import urljoin
 
-import requests
-from dotenv import load_dotenv
+from .auth.mercantil_auth import MercantilAuthManager
 
 logger = logging.getLogger(__name__)
 
-RUTA_RAIZ = Path(__file__).resolve().parents[2]
-RUTA_ENV = RUTA_RAIZ / ".env"
 BASE_URL_DEFAULT = "https://productos.mercantilandina.com.ar"
+MA_API_BASE_URL = "https://api.mercantilandina.com.ar"
 TIMEOUT_DEFAULT = 30
-
-
-def _cargar_dotenv() -> None:
-    """Carga variables de entorno desde el repositorio si el archivo existe."""
-    if RUTA_ENV.exists():
-        load_dotenv(dotenv_path=RUTA_ENV)
-    else:
-        load_dotenv()
+PRODUCTOS_TECNICOS_ENDPOINT = "/productos-coberturas-api/v1/productos-tecnicos-suscripciones"
 
 
 class MercantilClient:
@@ -43,58 +33,50 @@ class MercantilClient:
         base_url: str | None = None,
         timeout: int = TIMEOUT_DEFAULT,
     ) -> None:
-        _cargar_dotenv()
-
-        self.base_url = (base_url or os.getenv("MA_PORTAL_BASE_URL") or BASE_URL_DEFAULT).rstrip("/")
         self.timeout = timeout
-        self.token = (os.getenv("MA_TOKEN") or "").strip()
-        self.api_key = (os.getenv("MA_API_KEY") or "").strip()
-
-        if not self.token:
-            raise RuntimeError("MA_TOKEN not defined in environment variables")
-        if not self.api_key:
-            raise RuntimeError("MA_API_KEY not defined in environment variables")
-
-        self.session = requests.Session()
-        self.session.headers.update(
-            {
-                "Authorization": f"Bearer {self.token}",
-                "ocp-apim-subscription-key": self.api_key,
-                "Accept": "application/json, text/plain, */*",
-                "Origin": "https://servicios.mercantilandina.com.ar",
-                "Referer": "https://servicios.mercantilandina.com.ar/",
-                "User-Agent": (
-                    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-                    "AppleWebKit/537.36 (KHTML, like Gecko) "
-                    "Chrome/146.0.0.0 Safari/537.36"
-                ),
-                "x-requested-with": "XMLHttpRequest",
-            }
-        )
+        self.auth = MercantilAuthManager(timeout=timeout)
+        self.base_url = (base_url or os.getenv("MA_PORTAL_BASE_URL") or BASE_URL_DEFAULT).rstrip("/")
 
     def _request_json(
         self,
         endpoint: str,
         *,
+        method: str = "GET",
         params: dict[str, Any] | None = None,
+        json_body: dict[str, Any] | None = None,
         empty_on_400: Any | None = None,
+        base_url: str | None = None,
     ) -> Any:
-        """Ejecuta una llamada GET y devuelve su contenido JSON."""
-        url = urljoin(f"{self.base_url}/", endpoint.lstrip("/"))
-        logger.info("mercantil_request_started %s", {"endpoint": endpoint, "params": params or {}})
+        """Ejecuta una llamada HTTP autenticada y devuelve su contenido JSON."""
+        request_base_url = (base_url or self.base_url).rstrip("/")
+        url = urljoin(f"{request_base_url}/", endpoint.lstrip("/"))
+        logger.info(
+            "mercantil_request_started",
+            extra={
+                "endpoint": endpoint,
+                "method": method,
+                "params": params or {},
+                "has_json_body": bool(json_body),
+                "base_url": request_base_url,
+            },
+        )
 
         try:
-            respuesta = self.session.get(url, params=params, timeout=self.timeout)
-        except requests.RequestException:
-            logger.exception("mercantil_request_failed %s", {"endpoint": endpoint, "params": params or {}})
+            respuesta = self.auth.handle_request(method, url, params=params, json_body=json_body)
+        except Exception:
+            logger.exception(
+                "mercantil_request_failed",
+                extra={"endpoint": endpoint, "params": params or {}, "base_url": request_base_url},
+            )
             raise
 
         logger.info(
-            "mercantil_request_finished %s",
-            {
+            "mercantil_request_finished",
+            extra={
                 "endpoint": endpoint,
                 "status_code": respuesta.status_code,
                 "content_type": respuesta.headers.get("content-type"),
+                "base_url": request_base_url,
             },
         )
 
@@ -105,12 +87,41 @@ class MercantilClient:
             return empty_on_400
 
         respuesta.raise_for_status()
-
         try:
             return respuesta.json()
-        except ValueError as error:
-            logger.exception("mercantil_invalid_json %s", {"endpoint": endpoint})
-            raise RuntimeError(f"Mercantil API returned non-JSON response for {endpoint}") from error
+        except ValueError:
+            return None
+
+    def crear_cotizacion(self, payload: dict[str, Any]) -> Any:
+        """Ejecuta una cotizacion vehicular contra el endpoint principal de Mercantil."""
+        return self._request_json(
+            "/api_vehiculo_cotizador/v2/cotizaciones",
+            method="POST",
+            json_body=payload,
+        )
+
+    @staticmethod
+    def _normalizar_vehiculo(item: dict[str, Any]) -> dict[str, Any]:
+        """Normaliza un vehiculo del catalogo a un contrato interno minimo."""
+        marca = item.get("marca") if isinstance(item.get("marca"), dict) else {}
+        modelo = item.get("modelo") if isinstance(item.get("modelo"), dict) else {}
+        version = item.get("version") if isinstance(item.get("version"), dict) else {}
+        tipo = item.get("tipo") if isinstance(item.get("tipo"), dict) else {}
+
+        return {
+            "id": item.get("id"),
+            "marca": marca.get("descripcion") or item.get("marca"),
+            "modelo": modelo.get("descripcion") or item.get("modelo"),
+            "version": version.get("descripcion") or item.get("version"),
+            "anio": (
+                item.get("anio")
+                or item.get("fabricado")
+                or item.get("anio_modelo")
+                or item.get("ano")
+            ),
+            "tipo": tipo.get("descripcion") or item.get("tipo"),
+            "payload": item,
+        }
 
     @staticmethod
     def _normalizar_uso(item: dict[str, Any]) -> dict[str, Any]:
@@ -144,7 +155,7 @@ class MercantilClient:
         vehiculos = payload.get("vehiculos", [])
         if not isinstance(vehiculos, list):
             raise RuntimeError("Mercantil vehicle catalog response does not include a valid 'vehiculos' list.")
-        return vehiculos
+        return [self._normalizar_vehiculo(item) for item in vehiculos if isinstance(item, dict)]
 
     def obtener_usos(self) -> list[dict[str, Any]]:
         """Obtiene y normaliza el catalogo de usos de vehiculos."""
@@ -184,8 +195,9 @@ class MercantilClient:
             )
 
         return self._request_json(
-            "/productos-coberturas-api/v1/productos-tecnicos-suscripciones",
+            PRODUCTOS_TECNICOS_ENDPOINT,
             params=params,
+            base_url=MA_API_BASE_URL,
         )
 
 

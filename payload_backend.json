@@ -1,0 +1,31 @@
+{
+  "productor": 51262,
+  "bonificacion": 0,
+  "recargo": 25,
+  "comision": 20,
+  "categoria_iva": "1",
+  "ajuste_suma": "0",
+  "canal_cotizacion": "DELTA",
+  "cuota": 1,
+  "periodo": 1,
+  "moneda": 1,
+  "tipo_pago": "C",
+  "desde": "2026-03-23T23:59:02",
+  "item": {
+    "vehiculo_id": 138603,
+    "anio_modelo": 2025,
+    "ubicacion": 363,
+    "suma_asegurada": 15000000,
+    "uso_vehiculo": "14",
+    "infoVehiculo": {
+      "gnc": false,
+      "rastreo": false,
+      "es0Km": false,
+      "productosTecnicos": [
+        {
+          "codigo": "050926"
+        }
+      ]
+    }
+  }
+}

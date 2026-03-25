@@ -1,0 +1,64 @@
+{
+  "run_id": "run-20260315-082126",
+  "started_at": "2026-03-15T08:21:26Z",
+  "updated_at": "2026-03-15T08:24:54Z",
+  "job_index": 400,
+  "page": 0,
+  "completed": true,
+  "config": {
+    "output_dir": "C:\\Users\\nicoacebal\\Documents\\auto-insurance-lead-funnel\\data\\mercantil_catalog_v2",
+    "base_url": "https://productos.mercantilandina.com.ar",
+    "timeout": 30,
+    "page_size": 5000,
+    "max_pages_per_query": 3,
+    "sleep_seconds": 0.0,
+    "years": [
+      2024,
+      2025
+    ],
+    "types": [
+      "1",
+      "2",
+      "3",
+      "8",
+      "9",
+      "21",
+      "4",
+      "5",
+      "6",
+      "17"
+    ],
+    "seeds": [
+      "VOLKSWAGEN",
+      "FORD",
+      "CHEVROLET",
+      "RENAULT",
+      "FIAT",
+      "PEUGEOT",
+      "TOYOTA",
+      "CITROEN",
+      "NISSAN",
+      "HONDA",
+      "BMW",
+      "AUDI",
+      "MERCEDES",
+      "JEEP",
+      "HYUNDAI",
+      "KIA",
+      "CHERY",
+      "IVECO",
+      "SCANIA",
+      "VOLVO"
+    ]
+  },
+  "stats": {
+    "requests": 400,
+    "pages": 400,
+    "raw_pages_saved": 400,
+    "raw_records_saved": 1610,
+    "normalized_records_saved": 1610,
+    "new_ids": 1610,
+    "duplicates": 1356,
+    "errors": 0
+  }
+}
