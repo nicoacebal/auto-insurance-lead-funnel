@@ -3,3 +3,43 @@
 __pycache__/
 *.pyc
 scripts/catalogo_vehiculos_mercantil.json
+
+# Python
+*.pyo
+*.pyd
+
+# Virtual env
+venv/
+env/
+
+# Logs
+*.log
+
+# Temp / debug
+tmp_*.txt
+*.tmp
+*.temp
+
+# Local debug files
+productos_params_browser.txt
+productos_params_backend.json
+productos_params_browser.json
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Environment
+.env.*
+
+# Python build
+dist/
+build/
+*.egg-info/
+
+# Jupyter
+.ipynb_checkpoints/

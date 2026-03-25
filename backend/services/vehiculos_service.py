@@ -2,11 +2,14 @@
 
 from __future__ import annotations
 
+import logging
 from typing import Any
 
 from supabase import Client
 
 from infra.supabase_client import cliente_supabase
+
+logger = logging.getLogger(__name__)
 
 
 def _asegurar_cliente() -> Client:
@@ -79,11 +82,7 @@ def obtener_vehiculo_por_id(vehicle_id: int) -> dict[str, Any] | None:
             .execute()
         )
     except Exception as error:  # noqa: BLE001
-        print("\n==============================")
-        print("ERROR CONSULTANDO vehicle_catalog")
-        print(f"vehicle_id: {vehicle_id}")
-        print(str(error))
-        print("==============================\n")
+        logger.exception("Error consultando vehicle_catalog para vehicle_id=%s", vehicle_id)
         raise RuntimeError("No se pudo consultar vehicle_catalog por id.") from error
 
     datos = getattr(respuesta, "data", None)
