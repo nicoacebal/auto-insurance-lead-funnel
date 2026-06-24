@@ -10,6 +10,7 @@ from typing import Any
 from backend.integrations.mercantil_client import MercantilClient
 from backend.services.productos_service import obtener_productos_tecnicos
 from backend.services.vehiculos_service import obtener_vehiculo_por_id
+from infra.supabase_client import cliente_supabase
 
 logger = logging.getLogger(__name__)
 
@@ -21,6 +22,70 @@ CUOTA_DEFAULT = 1
 PERIODO_DEFAULT = 1
 MONEDA_DEFAULT = 1
 TIPO_PAGO_DEFAULT = "C"
+
+
+def _buscar_cotizacion_cache(
+    vehiculo_id: int,
+    anio_modelo: int,
+    ubicacion: int,
+    suma_asegurada: float,
+) -> dict[str, Any] | None:
+    """Busca una cotizacion previa con los mismos parametros en Supabase."""
+    if cliente_supabase is None:
+        return None
+
+    try:
+        respuesta = (
+            cliente_supabase.table("cotizaciones_cache")
+            .select("respuesta_json")
+            .eq("vehiculo_id", vehiculo_id)
+            .eq("anio_modelo", anio_modelo)
+            .eq("ubicacion", ubicacion)
+            .eq("suma_asegurada", suma_asegurada)
+            .order("created_at", desc=True)
+            .limit(1)
+            .execute()
+        )
+    except Exception:  # noqa: BLE001
+        logger.exception("No se pudo consultar cotizaciones_cache.")
+        return None
+
+    registros = getattr(respuesta, "data", None) or []
+    if not isinstance(registros, list) or not registros:
+        return None
+
+    registro = registros[0]
+    respuesta_json = registro.get("respuesta_json") if isinstance(registro, dict) else None
+    return respuesta_json if isinstance(respuesta_json, dict) else None
+
+
+def _guardar_cotizacion_cache(
+    vehiculo_id: int,
+    anio_modelo: int,
+    ubicacion: int,
+    suma_asegurada: float,
+    cotizacion_numero: int,
+    cotizacion_id: str,
+    respuesta: dict[str, Any],
+) -> None:
+    """Guarda una cotizacion resuelta en Supabase para reuso posterior."""
+    if cliente_supabase is None:
+        return
+
+    payload = {
+        "vehiculo_id": vehiculo_id,
+        "anio_modelo": anio_modelo,
+        "ubicacion": ubicacion,
+        "suma_asegurada": suma_asegurada,
+        "cotizacion_numero": cotizacion_numero,
+        "cotizacion_id": cotizacion_id,
+        "respuesta_json": respuesta,
+    }
+
+    try:
+        cliente_supabase.table("cotizaciones_cache").insert(payload).execute()
+    except Exception:  # noqa: BLE001
+        logger.exception("No se pudo guardar la cotizacion en cache.")
 
 
 def get_vehicle(vehicle_id: int) -> dict[str, Any]:
@@ -178,6 +243,16 @@ async def cotizar_vehiculo(
     comision: float = 20,
 ) -> dict[str, Any]:
     """Orquesta la cotizacion completa y devuelve coberturas normalizadas."""
+    cache = _buscar_cotizacion_cache(
+        vehiculo_id=vehiculo_id,
+        anio_modelo=anio_modelo,
+        ubicacion=ubicacion,
+        suma_asegurada=suma_asegurada,
+    )
+    if cache:
+        logger.info("Cotizacion obtenida desde cache")
+        return cache
+
     vehiculo = get_vehicle(vehiculo_id)
     productos = await obtener_productos_tecnicos(
         vehiculo_id,
@@ -202,6 +277,15 @@ async def cotizar_vehiculo(
         raise RuntimeError("Respuesta invalida de Mercantil.")
 
     resultado = parse_cotizacion_mercantil(respuesta)
-    logger.info("Mercantil cotizacion generada")
+    _guardar_cotizacion_cache(
+        vehiculo_id=vehiculo_id,
+        anio_modelo=anio_modelo,
+        ubicacion=ubicacion,
+        suma_asegurada=suma_asegurada,
+        cotizacion_numero=int(resultado.get("numero") or 0),
+        cotizacion_id=str(resultado.get("cotizacion_id") or ""),
+        respuesta=resultado,
+    )
+    logger.info("Cotizacion obtenida desde Mercantil")
     logger.info("Cotizacion numero: %s", resultado.get("numero"))
     return resultado

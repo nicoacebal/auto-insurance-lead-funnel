@@ -3,6 +3,7 @@
 from fastapi import FastAPI
 
 from backend.api.cotizaciones import router as cotizaciones_router
+from backend.api.leads import router as leads_router
 from backend.api.quotes import router as quotes_router
 from backend.api.vehicles import router as vehicles_router
 
@@ -15,6 +16,7 @@ app = FastAPI(
 app.include_router(vehicles_router)
 app.include_router(quotes_router)
 app.include_router(cotizaciones_router)
+app.include_router(leads_router)
 
 
 @app.get("/salud", tags=["Sistema"])
